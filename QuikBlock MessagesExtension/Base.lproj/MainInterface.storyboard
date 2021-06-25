@@ -22,7 +22,7 @@
         <!--Messages View Controller-->
         <scene sceneID="7MM-of-jgj">
             <objects>
-                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="BlockRace_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="QuikBlock_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,7 @@
         <!--Main Menu View Controller-->
         <scene sceneID="GRP-yg-vvF">
             <objects>
-                <viewController storyboardIdentifier="MainMenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IMd-Ex-fWf" customClass="MainMenuViewController" customModule="BlockRace_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainMenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IMd-Ex-fWf" customClass="MainMenuViewController" customModule="QuikBlock_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SnB-QF-kxq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +81,7 @@
         <!--Game View Controller-->
         <scene sceneID="77c-9s-a9i">
             <objects>
-                <viewController storyboardIdentifier="GameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UFu-UY-PGy" customClass="GameViewController" customModule="BlockRace_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UFu-UY-PGy" customClass="GameViewController" customModule="QuikBlock_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="prK-FT-avs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,12 +191,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JcI-Wb-wc6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-762.31884057971024" y="363.61607142857139"/>
+            <point key="canvasLocation" x="-729" y="364"/>
         </scene>
         <!--Board View Controller-->
         <scene sceneID="fny-XH-Z53">
             <objects>
-                <viewController storyboardIdentifier="BoardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="isX-UQ-xXF" customClass="BoardViewController" customModule="BlockRace_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BoardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="isX-UQ-xXF" customClass="BoardViewController" customModule="QuikBlock_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xjA-Wl-mdd">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -314,7 +314,7 @@
         <!--Winner View Controller-->
         <scene sceneID="2EL-J1-Vfg">
             <objects>
-                <viewController storyboardIdentifier="WinnerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fRi-IQ-s86" customClass="WinnerViewController" customModule="BlockRace_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WinnerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fRi-IQ-s86" customClass="WinnerViewController" customModule="QuikBlock_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HMo-z5-pXd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -402,12 +402,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gP-MV-d82" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-730" y="773"/>
+            <point key="canvasLocation" x="-252" y="773"/>
         </scene>
         <!--Scrambler View Controller-->
         <scene sceneID="VdU-Xf-CjS">
             <objects>
-                <viewController storyboardIdentifier="ScramblerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I9H-dZ-lYd" customClass="ScramblerViewController" customModule="BlockRace_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScramblerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I9H-dZ-lYd" customClass="ScramblerViewController" customModule="QuikBlock_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K8C-5A-0hl">
                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -461,7 +461,7 @@
         <!--Loser View Controller-->
         <scene sceneID="MQV-Tp-Vze">
             <objects>
-                <viewController storyboardIdentifier="LoserViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YQv-HE-nB2" customClass="LoserViewController" customModule="BlockRace_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoserViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YQv-HE-nB2" customClass="LoserViewController" customModule="QuikBlock_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XeY-iH-xu4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -540,7 +540,81 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jcu-bK-Mjf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-230.43478260869566" y="772.76785714285711"/>
+            <point key="canvasLocation" x="230" y="773"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="0sX-GQ-EEC">
+            <objects>
+                <viewController storyboardIdentifier="TutorialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="L0i-p0-bJE" customClass="TutorialViewController" customModule="QuikBlock_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XE8-vO-33f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRY-Fl-4mt" userLabel="board">
+                                <rect key="frame" x="41" y="220.5" width="238" height="237.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qRY-Fl-4mt" secondAttribute="height" multiplier="1:1" id="yjl-DU-ovK"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.png" translatesAutoresizingMaskIntoConstraints="NO" id="fNt-uu-j0y">
+                                <rect key="frame" x="130.5" y="309.5" width="59" height="59.5"/>
+                            </imageView>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VM7-b9-Slj" userLabel="sc">
+                                <rect key="frame" x="41" y="111" width="95" height="95"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VM7-b9-Slj" secondAttribute="height" multiplier="1:1" id="4JA-0R-4aW"/>
+                                </constraints>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wj7-CT-aQ4" userLabel="stick">
+                                <rect key="frame" x="88.5" y="206" width="8" height="62"/>
+                                <color key="backgroundColor" red="1" green="0.22861573099999999" blue="0.86293536420000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="cwm-FR-ttd"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pink_rect.png" translatesAutoresizingMaskIntoConstraints="NO" id="pbf-XX-3DU">
+                                <rect key="frame" x="41" y="111" width="95" height="95"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pink_rect.png" translatesAutoresizingMaskIntoConstraints="NO" id="9iU-pM-il5">
+                                <rect key="frame" x="88.5" y="268" width="143" height="142.5"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KTR-Sy-IAF"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9iU-pM-il5" firstAttribute="top" secondItem="Wj7-CT-aQ4" secondAttribute="bottom" id="4iq-RZ-O0D"/>
+                            <constraint firstItem="pbf-XX-3DU" firstAttribute="centerY" secondItem="VM7-b9-Slj" secondAttribute="centerY" id="5kg-ho-lFM"/>
+                            <constraint firstItem="fNt-uu-j0y" firstAttribute="width" secondItem="qRY-Fl-4mt" secondAttribute="width" multiplier="0.25" id="Cn0-rk-wPN"/>
+                            <constraint firstItem="qRY-Fl-4mt" firstAttribute="centerX" secondItem="XE8-vO-33f" secondAttribute="centerX" id="EZR-Rb-iyn"/>
+                            <constraint firstItem="qRY-Fl-4mt" firstAttribute="leading" secondItem="VM7-b9-Slj" secondAttribute="leading" id="F4C-YM-FkK"/>
+                            <constraint firstItem="9iU-pM-il5" firstAttribute="leading" secondItem="Wj7-CT-aQ4" secondAttribute="leading" id="Fdt-PI-0vG"/>
+                            <constraint firstItem="KTR-Sy-IAF" firstAttribute="bottom" secondItem="qRY-Fl-4mt" secondAttribute="bottom" constant="70" id="GeY-e1-8Bg"/>
+                            <constraint firstItem="Wj7-CT-aQ4" firstAttribute="top" secondItem="VM7-b9-Slj" secondAttribute="bottom" id="Ih8-FC-M4K"/>
+                            <constraint firstItem="9iU-pM-il5" firstAttribute="width" secondItem="qRY-Fl-4mt" secondAttribute="width" multiplier="0.6" id="MY9-nT-uyU"/>
+                            <constraint firstItem="fNt-uu-j0y" firstAttribute="centerX" secondItem="XE8-vO-33f" secondAttribute="centerX" id="Msz-Yz-VcK"/>
+                            <constraint firstItem="fNt-uu-j0y" firstAttribute="centerY" secondItem="qRY-Fl-4mt" secondAttribute="centerY" id="N5J-Lw-dcz"/>
+                            <constraint firstItem="VM7-b9-Slj" firstAttribute="width" secondItem="qRY-Fl-4mt" secondAttribute="width" multiplier="0.4" id="OAC-Rv-CAe"/>
+                            <constraint firstItem="9iU-pM-il5" firstAttribute="centerY" secondItem="qRY-Fl-4mt" secondAttribute="centerY" id="W8r-KM-lWF"/>
+                            <constraint firstItem="qRY-Fl-4mt" firstAttribute="height" secondItem="XE8-vO-33f" secondAttribute="height" multiplier="0.45" id="adq-BJ-YON"/>
+                            <constraint firstItem="pbf-XX-3DU" firstAttribute="width" secondItem="VM7-b9-Slj" secondAttribute="width" id="arF-3i-zWI"/>
+                            <constraint firstItem="fNt-uu-j0y" firstAttribute="height" secondItem="qRY-Fl-4mt" secondAttribute="height" multiplier="0.25" id="coJ-Qy-2dY"/>
+                            <constraint firstItem="pbf-XX-3DU" firstAttribute="centerX" secondItem="VM7-b9-Slj" secondAttribute="centerX" id="dDJ-Bn-TtY"/>
+                            <constraint firstItem="9iU-pM-il5" firstAttribute="centerX" secondItem="qRY-Fl-4mt" secondAttribute="centerX" id="e6B-cF-ike"/>
+                            <constraint firstItem="pbf-XX-3DU" firstAttribute="height" secondItem="VM7-b9-Slj" secondAttribute="height" id="pId-X8-vjx"/>
+                            <constraint firstItem="VM7-b9-Slj" firstAttribute="centerY" secondItem="XE8-vO-33f" secondAttribute="centerY" multiplier="0.6" id="poq-Ol-xrN"/>
+                            <constraint firstItem="9iU-pM-il5" firstAttribute="height" secondItem="qRY-Fl-4mt" secondAttribute="height" multiplier="0.6" id="u4a-Y7-6Q5"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="hand" destination="fNt-uu-j0y" id="Thk-Tz-wev"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OeD-nQ-YZp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-733.33333333333337" y="772.76785714285711"/>
         </scene>
     </scenes>
     <resources>
@@ -551,7 +625,9 @@
         <image name="block_w.png" width="256" height="256"/>
         <image name="block_y.png" width="256" height="256"/>
         <image name="btn_play.png" width="798" height="197"/>
+        <image name="hand.png" width="200" height="200"/>
         <image name="logo.png" width="1133" height="112"/>
+        <image name="pink_rect.png" width="1000" height="1000"/>
         <image name="winner_icon.png" width="287" height="287"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

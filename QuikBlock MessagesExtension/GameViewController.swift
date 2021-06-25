@@ -38,6 +38,9 @@ class GameViewController: UIViewController {
             self._lbTime.text = QuikBlock.time_string()
         }
         
+        // Tutorial
+        presentTutorial()
+        
         // Admob Banner
         _bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         _bannerView.rootViewController = self
@@ -106,6 +109,19 @@ class GameViewController: UIViewController {
         controller.didMove(toParent: self)
         
         _boardVC = controller
+    }
+    private func presentTutorial() {
+        let controller = storyboard!.instantiateViewController(identifier: "TutorialViewController") as TutorialViewController
+                
+        controller.willMove(toParent: self)
+        addChild(controller)
+        view.addSubview(controller.view)
+        controller.view.translatesAutoresizingMaskIntoConstraints = false
+        controller.view.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        controller.view.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        controller.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        controller.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        controller.didMove(toParent: self)
     }
     private func presentWaiting() {
         if QuikBlock._ready == false {

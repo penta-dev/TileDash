@@ -17,10 +17,10 @@ class MainMenuViewController: UIViewController {
     }
     @IBAction func onClickedStart(_ sender: Any) {
         QuikBlock.start()
-                
+        
         let message = MSMessage()
         let layout = MSMessageTemplateLayout()
-        layout.caption = "Let's play QuikBlock"
+        layout.caption = "Let's play Quik Block"
         message.layout = layout
         message.url = QuikBlock.getURLComponents().url
 
