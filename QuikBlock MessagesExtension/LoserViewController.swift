@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoserViewController: AdsViewController {
+class LoserViewController: ResultViewController {
 
     @IBOutlet weak var _lbTime: UILabel!
     @IBOutlet weak var _lbScore: UILabel!
