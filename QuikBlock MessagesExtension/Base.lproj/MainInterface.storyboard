@@ -45,14 +45,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="C09-ia-qUx">
-                                <rect key="frame" x="16" y="210.5" width="288" height="27.5"/>
+                                <rect key="frame" x="16" y="206.5" width="288" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="27.5" id="9rf-G2-bY1"/>
-                                    <constraint firstAttribute="width" constant="288" id="kCU-FC-5hg"/>
+                                    <constraint firstAttribute="width" constant="288" id="bQA-yq-bXr"/>
+                                    <constraint firstAttribute="height" constant="35" id="xj0-yd-6fr"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCw-fS-GPt">
-                                <rect key="frame" x="62" y="280" width="196" height="48"/>
+                                <rect key="frame" x="62" y="260" width="196" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="196" id="61A-4G-72A"/>
                                     <constraint firstAttribute="height" constant="48" id="JJq-O1-EH3"/>
@@ -62,13 +62,26 @@
                                     <action selector="onClickedStart:" destination="IMd-Ex-fWf" eventType="touchUpInside" id="uj7-kz-zIS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9w-Jz-BnI">
+                                <rect key="frame" x="251" y="0.0" width="69" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="0gc-1v-4oD"/>
+                                    <constraint firstAttribute="width" constant="69" id="Hjs-Yo-dRQ"/>
+                                </constraints>
+                                <state key="normal" image="btn_purchase.png"/>
+                                <connections>
+                                    <action selector="onClickedPurchase:" destination="IMd-Ex-fWf" eventType="touchUpInside" id="sZ2-Gd-B73"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iSX-DU-62w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="C09-ia-qUx" firstAttribute="centerY" secondItem="SnB-QF-kxq" secondAttribute="centerY" constant="-40" id="AV2-iX-ezd"/>
-                            <constraint firstItem="C09-ia-qUx" firstAttribute="centerX" secondItem="SnB-QF-kxq" secondAttribute="centerX" id="fwL-03-F3J"/>
-                            <constraint firstItem="KCw-fS-GPt" firstAttribute="centerY" secondItem="SnB-QF-kxq" secondAttribute="centerY" constant="40" id="ilF-c6-boy"/>
+                            <constraint firstItem="f9w-Jz-BnI" firstAttribute="top" secondItem="SnB-QF-kxq" secondAttribute="top" id="YS6-0P-O6M"/>
+                            <constraint firstItem="iSX-DU-62w" firstAttribute="trailing" secondItem="f9w-Jz-BnI" secondAttribute="trailing" id="bRQ-FM-Wd4"/>
+                            <constraint firstItem="C09-ia-qUx" firstAttribute="centerY" secondItem="SnB-QF-kxq" secondAttribute="centerY" constant="-40" id="cYO-MF-LCL"/>
+                            <constraint firstItem="KCw-fS-GPt" firstAttribute="centerY" secondItem="SnB-QF-kxq" secondAttribute="centerY" constant="20" id="ilF-c6-boy"/>
+                            <constraint firstItem="C09-ia-qUx" firstAttribute="centerX" secondItem="SnB-QF-kxq" secondAttribute="centerX" id="kfJ-mK-d0q"/>
                             <constraint firstItem="KCw-fS-GPt" firstAttribute="centerX" secondItem="SnB-QF-kxq" secondAttribute="centerX" id="w5Z-7z-lJT"/>
                         </constraints>
                     </view>
@@ -107,37 +120,37 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V S ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPO-XH-2rf">
-                                <rect key="frame" x="218" y="80.5" width="26.5" height="29"/>
+                                <rect key="frame" x="210.5" y="86" width="42" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Teko-Medium" family="Teko" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M O V E S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPD-Vn-aG9">
-                                <rect key="frame" x="41" y="25" width="46.5" height="26"/>
+                                <rect key="frame" x="41" y="25" width="83.5" height="21"/>
                                 <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQi-vU-JPG">
-                                <rect key="frame" x="41" y="51" width="38.5" height="24"/>
+                                <rect key="frame" x="41" y="46" width="38.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G O A L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mq6-rn-2ps">
-                                <rect key="frame" x="67.5" y="80.5" width="42" height="29"/>
+                                <rect key="frame" x="53" y="86" width="71.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Teko-Medium" family="Teko" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T I M E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bb6-wz-xJu">
-                                <rect key="frame" x="246" y="25" width="33" height="26"/>
+                                <rect key="frame" x="222" y="25" width="57" height="21"/>
                                 <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nh-RY-432">
-                                <rect key="frame" x="192" y="51" width="87" height="24"/>
+                                <rect key="frame" x="192" y="46" width="87" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -334,37 +347,37 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y O U   W I N !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYq-sf-dR6">
-                                        <rect key="frame" x="68.5" y="8" width="183" height="52"/>
+                                        <rect key="frame" x="42.5" y="8" width="235" height="42"/>
                                         <fontDescription key="fontDescription" name="Teko-Bold" family="Teko" pointSize="36"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y O U R   T I M E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuj-02-SdS">
-                                        <rect key="frame" x="224.5" y="58" width="51" height="17.5"/>
+                                        <rect key="frame" x="204" y="58" width="92" height="14"/>
                                         <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:01:42" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3p-1w-GUZ">
-                                        <rect key="frame" x="191.5" y="76.5" width="84" height="24"/>
+                                        <rect key="frame" x="212" y="73" width="84" height="24"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y O U R   M O V E S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc3-kT-2gy">
-                                        <rect key="frame" x="215.5" y="108.5" width="60" height="17.5"/>
+                                        <rect key="frame" x="186.5" y="105" width="109.5" height="14"/>
                                         <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="065" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqh-MK-4jj">
-                                        <rect key="frame" x="237.5" y="128" width="38" height="24"/>
+                                        <rect key="frame" x="258" y="121" width="38" height="24"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nul-rZ-N7q">
-                                        <rect key="frame" x="39" y="205" width="81" height="28"/>
+                                        <rect key="frame" x="39" y="198" width="81" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="gRd-VP-rQT"/>
                                             <constraint firstAttribute="width" constant="81" id="umU-79-Ol4"/>
@@ -375,7 +388,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pta-Zs-vkV">
-                                        <rect key="frame" x="194.5" y="205" width="81" height="28"/>
+                                        <rect key="frame" x="215" y="198" width="81" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="5hy-mj-ls7"/>
                                             <constraint firstAttribute="width" constant="81" id="KMh-TL-m2t"/>
@@ -386,7 +399,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for opponent's accepting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PI-FG-ppi">
-                                        <rect key="frame" x="53" y="168" width="214.5" height="17"/>
+                                        <rect key="frame" x="53" y="158" width="214.5" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -512,37 +525,37 @@
                                 <rect key="frame" x="0.0" y="164" width="320" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O P P O N E N T   W I N S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmt-BQ-6CA">
-                                        <rect key="frame" x="38" y="8" width="244" height="40.5"/>
+                                        <rect key="frame" x="-3" y="8" width="326" height="33"/>
                                         <fontDescription key="fontDescription" name="Teko-Bold" family="Teko" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y O U R   M O V E S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tq6-ef-bNg">
-                                        <rect key="frame" x="222" y="58.5" width="60" height="17.5"/>
+                                        <rect key="frame" x="213.5" y="51" width="109.5" height="14"/>
                                         <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="065" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Sw-tq-hk3">
-                                        <rect key="frame" x="244" y="76" width="38" height="24"/>
+                                        <rect key="frame" x="285" y="65" width="38" height="24"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:01:42" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIf-g8-Q1b">
-                                        <rect key="frame" x="38" y="76" width="84" height="24"/>
+                                        <rect key="frame" x="-3" y="65" width="84.5" height="24"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y O U R   T I M E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcY-30-0BW">
-                                        <rect key="frame" x="38" y="58.5" width="51" height="17.5"/>
+                                        <rect key="frame" x="-3" y="51" width="92.5" height="14"/>
                                         <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7b-EH-ui3">
-                                        <rect key="frame" x="38" y="156" width="81" height="28"/>
+                                        <rect key="frame" x="-3" y="145" width="81.5" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="raA-0M-w8w"/>
                                             <constraint firstAttribute="width" constant="81" id="tcY-7l-jQz"/>
@@ -553,7 +566,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3o-CS-xSS">
-                                        <rect key="frame" x="201" y="156" width="81" height="28"/>
+                                        <rect key="frame" x="242" y="145" width="81" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="Gab-73-hlH"/>
                                             <constraint firstAttribute="width" constant="81" id="QPb-SQ-K8B"/>
@@ -564,7 +577,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for opponent's accepting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y16-Yo-qaB">
-                                        <rect key="frame" x="53" y="119" width="214.5" height="17"/>
+                                        <rect key="frame" x="53" y="111.5" width="214.5" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -617,6 +630,135 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jcu-bK-Mjf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="230" y="773"/>
+        </scene>
+        <!--Store View Controller-->
+        <scene sceneID="9hg-6g-jPD">
+            <objects>
+                <viewController storyboardIdentifier="StoreViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vNI-eX-NbU" customClass="StoreViewController" customModule="QuikBlock_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mdU-te-6Ri">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U P G R A D E   T O D A Y !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beC-MA-qQP">
+                                <rect key="frame" x="-12" y="62.5" width="344" height="33"/>
+                                <fontDescription key="fontDescription" name="Teko-Bold" family="Teko" pointSize="28"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7D8-iF-iXN">
+                                <rect key="frame" x="37.5" y="137.5" width="95" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="RBg-sH-Shm"/>
+                                    <constraint firstAttribute="width" constant="95" id="RkL-Jk-oqW"/>
+                                </constraints>
+                                <state key="normal" image="icon_theme1.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xx-4e-DMN">
+                                <rect key="frame" x="187.5" y="137.5" width="95" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="O6Q-dG-pPG"/>
+                                    <constraint firstAttribute="width" constant="95" id="faM-kh-6eC"/>
+                                </constraints>
+                                <state key="normal" image="icon_theme2.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kup-bD-cLK">
+                                <rect key="frame" x="37.5" y="295.5" width="95" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="I3o-DV-4UL"/>
+                                    <constraint firstAttribute="width" constant="95" id="nVV-Qk-mWo"/>
+                                </constraints>
+                                <state key="normal" image="icon_remove_ads.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIN-gM-9y0">
+                                <rect key="frame" x="187.5" y="295.5" width="95" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="5ch-KP-3ZT"/>
+                                    <constraint firstAttribute="width" constant="95" id="9bZ-TQ-JJb"/>
+                                </constraints>
+                                <state key="normal" image="icon_coming_soon.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTZ-7C-xdx">
+                                <rect key="frame" x="112.5" y="427.5" width="95" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="8q6-dN-iP7"/>
+                                    <constraint firstAttribute="height" constant="95" id="S3m-ua-wj7"/>
+                                </constraints>
+                                <state key="normal" image="btn_home.png"/>
+                                <connections>
+                                    <action selector="onClickedHome:" destination="vNI-eX-NbU" eventType="touchUpInside" id="i2M-rV-ggH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D I N O S A U R S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GG3-Br-gVc">
+                                <rect key="frame" x="37" y="123.5" width="96.5" height="14"/>
+                                <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N O   A D S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXh-YR-QaG">
+                                <rect key="frame" x="54" y="281.5" width="62" height="14"/>
+                                <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9A-bC-Gjm">
+                                <rect key="frame" x="68.5" y="395.5" width="33.5" height="14"/>
+                                <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RzV-IO-M2r">
+                                <rect key="frame" x="68.5" y="237.5" width="33.5" height="14"/>
+                                <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C O M I N G   S O O N" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xr-OF-74m">
+                                <rect key="frame" x="175" y="281.5" width="120.5" height="14"/>
+                                <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASd-B7-bO2">
+                                <rect key="frame" x="218.5" y="237.5" width="33.5" height="14"/>
+                                <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S P A C E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xZ-ez-PG5">
+                                <rect key="frame" x="208.5" y="123.5" width="53" height="14"/>
+                                <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="98H-iw-IYb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="beC-MA-qQP" firstAttribute="centerY" secondItem="mdU-te-6Ri" secondAttribute="centerY" multiplier="0.3" id="565-rx-uGi"/>
+                            <constraint firstItem="uIN-gM-9y0" firstAttribute="centerY" secondItem="mdU-te-6Ri" secondAttribute="centerY" multiplier="1.3" id="5Rw-MW-il1"/>
+                            <constraint firstItem="Y9A-bC-Gjm" firstAttribute="centerX" secondItem="Kup-bD-cLK" secondAttribute="centerX" id="5xC-nq-oHj"/>
+                            <constraint firstItem="Y9A-bC-Gjm" firstAttribute="top" secondItem="Kup-bD-cLK" secondAttribute="bottom" constant="5" id="63N-7F-FY9"/>
+                            <constraint firstItem="Kup-bD-cLK" firstAttribute="centerY" secondItem="mdU-te-6Ri" secondAttribute="centerY" multiplier="1.3" id="7ay-3X-mjA"/>
+                            <constraint firstItem="ASd-B7-bO2" firstAttribute="centerX" secondItem="1xx-4e-DMN" secondAttribute="centerX" id="Aan-bG-Vi5"/>
+                            <constraint firstItem="Kup-bD-cLK" firstAttribute="top" secondItem="hXh-YR-QaG" secondAttribute="bottom" id="H1v-bf-ImN"/>
+                            <constraint firstItem="xTZ-7C-xdx" firstAttribute="centerX" secondItem="mdU-te-6Ri" secondAttribute="centerX" id="I19-JX-fgz"/>
+                            <constraint firstItem="1xx-4e-DMN" firstAttribute="centerX" secondItem="mdU-te-6Ri" secondAttribute="centerX" constant="75" id="Ipf-uM-5uC"/>
+                            <constraint firstItem="RzV-IO-M2r" firstAttribute="top" secondItem="7D8-iF-iXN" secondAttribute="bottom" constant="5" id="Kei-AJ-0dm"/>
+                            <constraint firstItem="1xx-4e-DMN" firstAttribute="centerY" secondItem="mdU-te-6Ri" secondAttribute="centerY" multiplier="0.7" id="L7q-eD-egG"/>
+                            <constraint firstItem="uIN-gM-9y0" firstAttribute="centerX" secondItem="9Xr-OF-74m" secondAttribute="centerX" id="P5Y-rC-nC7"/>
+                            <constraint firstItem="Kup-bD-cLK" firstAttribute="centerX" secondItem="hXh-YR-QaG" secondAttribute="centerX" id="R9s-Mg-f55"/>
+                            <constraint firstItem="RzV-IO-M2r" firstAttribute="centerX" secondItem="7D8-iF-iXN" secondAttribute="centerX" id="TNM-eN-QeD"/>
+                            <constraint firstItem="Kup-bD-cLK" firstAttribute="centerX" secondItem="mdU-te-6Ri" secondAttribute="centerX" constant="-75" id="Whg-cy-jD3"/>
+                            <constraint firstItem="7D8-iF-iXN" firstAttribute="centerX" secondItem="GG3-Br-gVc" secondAttribute="centerX" id="aSb-w4-KEW"/>
+                            <constraint firstItem="ASd-B7-bO2" firstAttribute="top" secondItem="1xx-4e-DMN" secondAttribute="bottom" constant="5" id="aXA-ct-O1e"/>
+                            <constraint firstItem="uIN-gM-9y0" firstAttribute="centerX" secondItem="mdU-te-6Ri" secondAttribute="centerX" constant="75" id="cWe-5I-7zN"/>
+                            <constraint firstItem="7D8-iF-iXN" firstAttribute="centerX" secondItem="mdU-te-6Ri" secondAttribute="centerX" constant="-75" id="fZC-lt-OAE"/>
+                            <constraint firstItem="xTZ-7C-xdx" firstAttribute="centerY" secondItem="mdU-te-6Ri" secondAttribute="centerY" multiplier="1.8" id="fh1-Ma-9tq"/>
+                            <constraint firstItem="1xx-4e-DMN" firstAttribute="top" secondItem="5xZ-ez-PG5" secondAttribute="bottom" id="g2O-sY-aMy"/>
+                            <constraint firstItem="beC-MA-qQP" firstAttribute="centerX" secondItem="mdU-te-6Ri" secondAttribute="centerX" id="l1n-2V-hRU"/>
+                            <constraint firstItem="7D8-iF-iXN" firstAttribute="centerY" secondItem="mdU-te-6Ri" secondAttribute="centerY" multiplier="0.7" id="nqI-jJ-34p"/>
+                            <constraint firstItem="5xZ-ez-PG5" firstAttribute="centerX" secondItem="1xx-4e-DMN" secondAttribute="centerX" id="sNi-VO-idh"/>
+                            <constraint firstItem="7D8-iF-iXN" firstAttribute="top" secondItem="GG3-Br-gVc" secondAttribute="bottom" id="yKd-im-jg2"/>
+                            <constraint firstItem="uIN-gM-9y0" firstAttribute="top" secondItem="9Xr-OF-74m" secondAttribute="bottom" id="zeP-G9-5Gm"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="320" height="528"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bu-8W-bVM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727.536231884058" y="772.76785714285711"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="0sX-GQ-EEC">
@@ -700,11 +842,17 @@
         <image name="block_r.png" width="256" height="256"/>
         <image name="block_w.png" width="256" height="256"/>
         <image name="block_y.png" width="256" height="256"/>
+        <image name="btn_home.png" width="256" height="256"/>
         <image name="btn_play.png" width="798" height="197"/>
+        <image name="btn_purchase.png" width="256" height="256"/>
         <image name="btn_quit.png" width="285" height="102"/>
         <image name="btn_rematch.png" width="285" height="102"/>
         <image name="hand.png" width="200" height="200"/>
-        <image name="logo.png" width="1133" height="112"/>
+        <image name="icon_coming_soon.png" width="444" height="444"/>
+        <image name="icon_remove_ads.png" width="444" height="444"/>
+        <image name="icon_theme1.png" width="444" height="444"/>
+        <image name="icon_theme2.png" width="444" height="444"/>
+        <image name="logo.png" width="1127" height="136.80000305175781"/>
         <image name="pink_rect.png" width="1000" height="1000"/>
         <image name="winner_icon.png" width="287" height="287"/>
         <systemColor name="systemBackgroundColor">

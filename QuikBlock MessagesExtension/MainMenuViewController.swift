@@ -18,7 +18,8 @@ class MainMenuViewController: UIViewController {
     @IBAction func onClickedStart(_ sender: Any) {
         QuikBlock.start()
         
-        let message = MSMessage()
+        let session = MSSession()
+        let message = MSMessage(session: session)
         let layout = MSMessageTemplateLayout()
         layout.caption = "Let's play Quik Block"
         message.layout = layout
@@ -27,5 +28,11 @@ class MainMenuViewController: UIViewController {
         MessagesViewController.messagesVC.activeConversation?.send(message, completionHandler: { error in
         })
         MessagesViewController.messagesVC.dismiss()
+    }
+    
+    @IBAction func onClickedPurchase(_ sender: Any) {
+        let controller = storyboard!.instantiateViewController(identifier: "StoreViewController") as! StoreViewController
+        present(controller, animated: true, completion: nil)
+        MessagesViewController.messagesVC.requestPresentationStyle(.expanded)
     }
 }

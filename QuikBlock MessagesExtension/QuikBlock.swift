@@ -284,14 +284,17 @@ class QuikBlock {
         setMe(conversation:conversation, components: components)
     }
     static func sendUpdate() {
-        let message = MSMessage()
-        let layout = MSMessageTemplateLayout()
-        layout.caption = "QuikBlock play"
-        message.layout = layout
-        message.url = QuikBlock.getURLComponents().url
+        if let session = MessagesViewController.messagesVC.activeConversation?.selectedMessage?.session
+        {
+            let message = MSMessage(session: session)
+            let layout = MSMessageTemplateLayout()
+            layout.caption = "QuikBlock play"
+            message.layout = layout
+            message.url = QuikBlock.getURLComponents().url
 
-        MessagesViewController.messagesVC.activeConversation?.send(message, completionHandler: { error in
-        })
+            MessagesViewController.messagesVC.activeConversation?.send(message, completionHandler: { error in
+            })
+        }
     }
     static func checkWinner() -> Int {
         if  _scrambler[0] == _me[1][1] &&
