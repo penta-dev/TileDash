@@ -543,19 +543,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:01:42" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIf-g8-Q1b">
-                                        <rect key="frame" x="-3" y="65" width="84.5" height="24"/>
+                                        <rect key="frame" x="-3" y="65" width="83.5" height="24"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y O U R   T I M E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcY-30-0BW">
-                                        <rect key="frame" x="-3" y="51" width="92.5" height="14"/>
+                                        <rect key="frame" x="-3" y="51" width="92" height="14"/>
                                         <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7b-EH-ui3">
-                                        <rect key="frame" x="-3" y="145" width="81.5" height="28"/>
+                                        <rect key="frame" x="-3" y="145" width="81" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="raA-0M-w8w"/>
                                             <constraint firstAttribute="width" constant="81" id="tcY-7l-jQz"/>

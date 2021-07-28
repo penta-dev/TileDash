@@ -1,6 +1,6 @@
 //
 //  MessagesViewController.swift
-//  QuikBlock MessagesExtension
+//  TileDash MessagesExtension
 //
 //  Created by dev on 5/6/21.
 //
@@ -8,6 +8,7 @@
 import UIKit
 import Messages
 import GoogleMobileAds
+import os.log
 
 class MessagesViewController: MSMessagesAppViewController {
     static var messagesVC: MessagesViewController!
@@ -24,7 +25,7 @@ class MessagesViewController: MSMessagesAppViewController {
     override func willBecomeActive(with conversation: MSConversation) {
         if let messageURL = conversation.selectedMessage?.url {
             let components = URLComponents(url: messageURL, resolvingAgainstBaseURL: false)
-            QuikBlock.setData(conversation:conversation, components: components!)
+            TileDash.setData(conversation:conversation, components: components!)
             presentGameViewController()
             checkWinner()
         } else {
@@ -32,13 +33,16 @@ class MessagesViewController: MSMessagesAppViewController {
         }
     }
     override func didReceive(_ message: MSMessage, conversation: MSConversation) {
+        if TileDash.isMyMessage(conversation) {
+            return
+        }
         if let incomingSession = message.session {
             if incomingSession == conversation.selectedMessage?.session {
-                if let messageURL = conversation.selectedMessage?.url {
+                if let messageURL = conversation.selectedMessage?.url {                    
                     let components = URLComponents(url: messageURL, resolvingAgainstBaseURL: false)
-                    QuikBlock.setReady(conversation: conversation, components: components!)
-                    QuikBlock.setOpponent(conversation: conversation, components: components!)
-                    gameVC?.updateOpponent()
+                    TileDash.setReady(conversation: conversation, components: components!)
+                    TileDash.setOpponent(conversation: conversation, components: components!)
+                    gameVC!.updateOpponent()
                     checkWinner()
                 }
             }
@@ -99,7 +103,7 @@ class MessagesViewController: MSMessagesAppViewController {
         controller.didMove(toParent: self)
     }
     func checkWinner() {
-        let result = QuikBlock.checkWinner()
+        let result = TileDash.checkWinner()
         if result == 1 {
             presentWinnerVC()
         }

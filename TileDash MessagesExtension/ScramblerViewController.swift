@@ -1,6 +1,6 @@
 //
 //  ScramblerViewController.swift
-//  QuikBlock MessagesExtension
+//  TileDash MessagesExtension
 //
 //  Created by dev on 5/24/21.
 //
@@ -33,7 +33,7 @@ class ScramblerViewController: UIViewController {
     }
     func refresh() {
         for i in stride(from: 0, to: 9, by: 1) {
-            _cell[i].image = QuikBlock.getImage(value: QuikBlock._scrambler[i])
+            _cell[i].image = TileDash.getImage(value: TileDash._scrambler[i])
         }
     }
 }

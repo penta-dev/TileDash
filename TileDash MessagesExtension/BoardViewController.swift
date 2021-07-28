@@ -1,6 +1,6 @@
 //
 //  BoardViewController.swift
-//  QuikBlock MessagesExtension
+//  TileDash MessagesExtension
 //
 //  Created by dev on 5/20/21.
 //
@@ -60,7 +60,7 @@ class BoardViewController: UIViewController {
     func refreshBoard() {
         for i in stride(from: 0, to: 5, by: 1) {
             for j in stride(from: 0, to: 5, by: 1) {
-                _cell[i][j].image = QuikBlock.getImage(value: _value[i][j])
+                _cell[i][j].image = TileDash.getImage(value: _value[i][j])
             }
         }
     }
@@ -200,12 +200,12 @@ class BoardViewController: UIViewController {
         }
     }
     func didMove() {
-        QuikBlock._my_score += 1
+        TileDash._my_score += 1
         _gameVC?.updateScore()
         
-        QuikBlock._me = _value
+        TileDash._me = _value
         
-        QuikBlock.sendUpdate()
+        TileDash.sendUpdate()
         MessagesViewController.messagesVC.checkWinner()
     }
 }

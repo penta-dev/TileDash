@@ -1,6 +1,6 @@
 //
-//  QuikBlock.swift
-//  QuikBlock MessagesExtension
+//  TileDash.swift
+//  TileDash MessagesExtension
 //
 //  Created by dev on 5/24/21.
 //
@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import Messages
 
-class QuikBlock {
+class TileDash {
     static var _time: Int = 0
     static var _ready: Bool!
     
@@ -197,6 +197,7 @@ class QuikBlock {
         }
         return key
     }*/
+    // MARK: setOpponent
     static func setOpponent(conversation: MSConversation, components: URLComponents) {
         _opponent = [
             [0,0,0,0,0],
@@ -214,6 +215,30 @@ class QuikBlock {
             score_key = "my_score"
             key = "meb"
         }
+        for ( _, queryItem) in (components.queryItems?.enumerated())! {
+            let name = queryItem.name
+            if name.contains(key) {
+                let c1 = name[String.Index.init(utf16Offset: 3, in: name)]
+                let c2 = name[String.Index.init(utf16Offset: 4, in: name)]
+                let i = Int(String(c1))!
+                let j = Int(String(c2))!
+                _opponent[i][j] = Int(queryItem.value!)!
+            }
+            if name == score_key {
+                _op_score = Int(queryItem.value!)!
+            }
+        }
+    }
+    static func setOpponentForReceive(conversation: MSConversation, components: URLComponents) {
+        _opponent = [
+            [0,0,0,0,0],
+            [0,0,0,0,0],
+            [0,0,0,0,0],
+            [0,0,0,0,0],
+            [0,0,0,0,0]
+        ]
+        let score_key = "my_score"
+        let key = "meb"
         for ( _, queryItem) in (components.queryItems?.enumerated())! {
             let name = queryItem.name
             if name.contains(key) {
@@ -288,9 +313,10 @@ class QuikBlock {
         {
             let message = MSMessage(session: session)
             let layout = MSMessageTemplateLayout()
-            layout.caption = "QuikBlock play"
+            layout.caption = "TileDash play"
             message.layout = layout
-            message.url = QuikBlock.getURLComponents().url
+            message.url = TileDash.getURLComponents().url
+            
 
             MessagesViewController.messagesVC.activeConversation?.send(message, completionHandler: { error in
             })

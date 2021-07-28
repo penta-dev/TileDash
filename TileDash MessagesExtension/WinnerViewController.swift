@@ -1,6 +1,6 @@
 //
 //  WinnerViewController.swift
-//  QuikBlock MessagesExtension
+//  TileDash MessagesExtension
 //
 //  Created by dev on 6/2/21.
 //
@@ -15,7 +15,7 @@ class WinnerViewController: ResultViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        _lbTime.text = QuikBlock.time_string()
-        _lbScore.text = "\(QuikBlock._my_score!)"
+        _lbTime.text = TileDash.time_string()
+        _lbScore.text = "\(TileDash._my_score!)"
     }    
 }

@@ -1,6 +1,6 @@
 //
 //  GameViewController.swift
-//  QuikBlock MessagesExtension
+//  TileDash MessagesExtension
 //
 //  Created by dev on 5/22/21.
 //
@@ -30,12 +30,12 @@ class GameViewController: UIViewController {
         presentScrambler()
         presentOpponent()
         presentBoard()
-        presentWaiting()
+        //presentWaiting()
         
         updateScore()
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { t in
-            QuikBlock._time += 1
-            self._lbTime.text = QuikBlock.time_string()
+            TileDash._time += 1
+            self._lbTime.text = TileDash.time_string()
         }
         
         // Tutorial
@@ -47,14 +47,14 @@ class GameViewController: UIViewController {
         _bannerView.load(GADRequest())
     }
     func updateOpponent() {
-        _opponentVC.refreshBoard()
+        _opponentVC.setBoard(TileDash._opponent)
         if let ac = _waitingAC {    // remove waiting... alert
             ac.dismiss(animated: true, completion: nil)
             _waitingAC = nil
         }
     }
     func updateScore() {
-        _lbScore.text = String(QuikBlock._my_score)
+        _lbScore.text = String(TileDash._my_score)
     }
     private func presentScrambler() {
         let controller = storyboard!.instantiateViewController(identifier: "ScramblerViewController") as ScramblerViewController        
@@ -76,7 +76,7 @@ class GameViewController: UIViewController {
         
         controller._touchEnable = false
         controller.initCellViews()
-        controller.setBoard(QuikBlock._opponent)
+        controller.setBoard(TileDash._opponent)
         
         controller.willMove(toParent: self)
         addChild(controller)
@@ -95,7 +95,7 @@ class GameViewController: UIViewController {
         
         controller._touchEnable = true
         controller.initCellViews()
-        controller.setBoard(QuikBlock._me)
+        controller.setBoard(TileDash._me)
         controller._gameVC = self
         
         controller.willMove(toParent: self)
@@ -124,7 +124,7 @@ class GameViewController: UIViewController {
         controller.didMove(toParent: self)
     }
     private func presentWaiting() {
-        if QuikBlock._ready == false {
+        if TileDash._ready == false {
             _waitingAC = UIAlertController(title: nil, message: "Please wait for opponent...", preferredStyle: .alert)
             present(_waitingAC!, animated: true, completion: nil)
         }

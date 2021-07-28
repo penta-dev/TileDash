@@ -1,6 +1,6 @@
 //
 //  MainMenuViewController.swift
-//  QuikBlock MessagesExtension
+//  TileDash MessagesExtension
 //
 //  Created by dev on 5/24/21.
 //
@@ -16,14 +16,14 @@ class MainMenuViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func onClickedStart(_ sender: Any) {
-        QuikBlock.start()
+        TileDash.start()
         
         let session = MSSession()
         let message = MSMessage(session: session)
         let layout = MSMessageTemplateLayout()
-        layout.caption = "Let's play Quik Block"
+        layout.caption = "Let's play Tile Dash"
         message.layout = layout
-        message.url = QuikBlock.getURLComponents().url
+        message.url = TileDash.getURLComponents().url
 
         MessagesViewController.messagesVC.activeConversation?.send(message, completionHandler: { error in
         })

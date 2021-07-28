@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D70086AF26B0D9E500863760 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70086A926B0D9DD00863760 /* GoogleUtilities.framework */; };
+		D70086B026B0D9E500863760 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70086AA26B0D9DE00863760 /* nanopb.framework */; };
+		D70086B126B0D9E500863760 /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70086AB26B0D9E000863760 /* PromisesObjC.framework */; };
+		D70086B226B0D9E500863760 /* UserMessagingPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70086AC26B0D9E100863760 /* UserMessagingPlatform.framework */; };
+		D70086B326B0D9E500863760 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70086AD26B0D9E400863760 /* GoogleMobileAds.framework */; };
+		D70086B426B0D9E500863760 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70086AE26B0D9E500863760 /* GoogleAppMeasurement.framework */; };
 		D70DDE72269ACA4A00B99785 /* btn_purchase.png in Resources */ = {isa = PBXBuildFile; fileRef = D70DDE71269ACA4A00B99785 /* btn_purchase.png */; };
 		D70DDE76269ACD0E00B99785 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D70DDE75269ACD0E00B99785 /* logo.png */; };
 		D7173412267D193A00839D00 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7173411267D193A00839D00 /* ResultViewController.swift */; };
@@ -17,7 +23,7 @@
 		D7246F292657915D00715C2A /* block_y.png in Resources */ = {isa = PBXBuildFile; fileRef = D7246F232657915D00715C2A /* block_y.png */; };
 		D7246F2A2657915D00715C2A /* block_g.png in Resources */ = {isa = PBXBuildFile; fileRef = D7246F242657915D00715C2A /* block_g.png */; };
 		D72C005E2643CE8900EDDA28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72C005D2643CE8900EDDA28 /* Assets.xcassets */; };
-		D72C00652643CE8900EDDA28 /* QuikBlock MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D72C00642643CE8900EDDA28 /* QuikBlock MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D72C00652643CE8900EDDA28 /* TileDash MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D72C00642643CE8900EDDA28 /* TileDash MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D72C006A2643CE8900EDDA28 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72C00692643CE8900EDDA28 /* Messages.framework */; };
 		D72C006D2643CE8900EDDA28 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72C006C2643CE8900EDDA28 /* MessagesViewController.swift */; };
 		D72C00702643CE8900EDDA28 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72C006E2643CE8900EDDA28 /* MainInterface.storyboard */; };
@@ -31,12 +37,6 @@
 		D77F108D2684E86600F9433A /* pink_rect.png in Resources */ = {isa = PBXBuildFile; fileRef = D77F108C2684E86600F9433A /* pink_rect.png */; };
 		D77F108F2684EBAC00F9433A /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77F108E2684EBAC00F9433A /* TutorialViewController.swift */; };
 		D783BD4026856286000A3670 /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = D783BD3F26856286000A3670 /* hand.png */; };
-		D79D99EA269D969200B0BA73 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79D99E4269D968F00B0BA73 /* GoogleAppMeasurement.framework */; };
-		D79D99EB269D969200B0BA73 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79D99E5269D969100B0BA73 /* GoogleMobileAds.framework */; };
-		D79D99EC269D969200B0BA73 /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79D99E6269D969100B0BA73 /* PromisesObjC.framework */; };
-		D79D99ED269D969200B0BA73 /* UserMessagingPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79D99E7269D969200B0BA73 /* UserMessagingPlatform.framework */; };
-		D79D99EE269D969200B0BA73 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79D99E8269D969200B0BA73 /* GoogleUtilities.framework */; };
-		D79D99EF269D969200B0BA73 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79D99E9269D969200B0BA73 /* nanopb.framework */; };
 		D7A61B212686B477008ADDB5 /* btn_rematch.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A61B1F2686B477008ADDB5 /* btn_rematch.png */; };
 		D7A61B222686B477008ADDB5 /* btn_quit.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A61B202686B477008ADDB5 /* btn_quit.png */; };
 		D7A98DBA2699355900A5FB11 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A98DB92699355900A5FB11 /* StoreViewController.swift */; };
@@ -48,7 +48,7 @@
 		D7A98DC62699362400A5FB11 /* icon_question.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A98DC02699362400A5FB11 /* icon_question.png */; };
 		D7A98DC82699399700A5FB11 /* btn_home.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A98DC72699399700A5FB11 /* btn_home.png */; };
 		D7F82704265CB766007E7D12 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F82703265CB766007E7D12 /* MainMenuViewController.swift */; };
-		D7F82706265CBD40007E7D12 /* QuikBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F82705265CBD40007E7D12 /* QuikBlock.swift */; };
+		D7F82706265CBD40007E7D12 /* TileDash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F82705265CBD40007E7D12 /* TileDash.swift */; };
 		D7FC911C2667694E0049E1AA /* Teko-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7FC91172667694E0049E1AA /* Teko-Bold.ttf */; };
 		D7FC911D2667694E0049E1AA /* Teko-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7FC91182667694E0049E1AA /* Teko-Medium.ttf */; };
 		D7FC911E2667694E0049E1AA /* Teko-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7FC91192667694E0049E1AA /* Teko-SemiBold.ttf */; };
@@ -63,7 +63,7 @@
 			containerPortal = D72C00542643CE8500EDDA28 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D72C00632643CE8900EDDA28;
-			remoteInfo = "QuikBlock MessagesExtension";
+			remoteInfo = "TileDash MessagesExtension";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -74,7 +74,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D72C00652643CE8900EDDA28 /* QuikBlock MessagesExtension.appex in Embed App Extensions */,
+				D72C00652643CE8900EDDA28 /* TileDash MessagesExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +82,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D70086A926B0D9DD00863760 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		D70086AA26B0D9DE00863760 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
+		D70086AB26B0D9E000863760 /* PromisesObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromisesObjC.framework; sourceTree = "<group>"; };
+		D70086AC26B0D9E100863760 /* UserMessagingPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UserMessagingPlatform.framework; sourceTree = "<group>"; };
+		D70086AD26B0D9E400863760 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		D70086AE26B0D9E500863760 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
 		D70DDE71269ACA4A00B99785 /* btn_purchase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_purchase.png; sourceTree = "<group>"; };
 		D70DDE75269ACD0E00B99785 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		D7173411267D193A00839D00 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -91,10 +97,10 @@
 		D7246F222657915D00715C2A /* block_w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_w.png; sourceTree = "<group>"; };
 		D7246F232657915D00715C2A /* block_y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_y.png; sourceTree = "<group>"; };
 		D7246F242657915D00715C2A /* block_g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_g.png; sourceTree = "<group>"; };
-		D72C005A2643CE8600EDDA28 /* QuikBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuikBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D72C005A2643CE8600EDDA28 /* TileDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TileDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72C005D2643CE8900EDDA28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D72C005F2643CE8900EDDA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D72C00642643CE8900EDDA28 /* QuikBlock MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "QuikBlock MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D72C00642643CE8900EDDA28 /* TileDash MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TileDash MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72C00692643CE8900EDDA28 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		D72C006C2643CE8900EDDA28 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		D72C006F2643CE8900EDDA28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -109,12 +115,6 @@
 		D77F108C2684E86600F9433A /* pink_rect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pink_rect.png; sourceTree = "<group>"; };
 		D77F108E2684EBAC00F9433A /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		D783BD3F26856286000A3670 /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand.png; sourceTree = "<group>"; };
-		D79D99E4269D968F00B0BA73 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
-		D79D99E5269D969100B0BA73 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		D79D99E6269D969100B0BA73 /* PromisesObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromisesObjC.framework; sourceTree = "<group>"; };
-		D79D99E7269D969200B0BA73 /* UserMessagingPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UserMessagingPlatform.framework; sourceTree = "<group>"; };
-		D79D99E8269D969200B0BA73 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
-		D79D99E9269D969200B0BA73 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
 		D7A61B1F2686B477008ADDB5 /* btn_rematch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_rematch.png; sourceTree = "<group>"; };
 		D7A61B202686B477008ADDB5 /* btn_quit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_quit.png; sourceTree = "<group>"; };
 		D7A98DB92699355900A5FB11 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		D7A98DC02699362400A5FB11 /* icon_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_question.png; sourceTree = "<group>"; };
 		D7A98DC72699399700A5FB11 /* btn_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_home.png; sourceTree = "<group>"; };
 		D7F82703265CB766007E7D12 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
-		D7F82705265CBD40007E7D12 /* QuikBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuikBlock.swift; sourceTree = "<group>"; };
+		D7F82705265CBD40007E7D12 /* TileDash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileDash.swift; sourceTree = "<group>"; };
 		D7FC91172667694E0049E1AA /* Teko-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Bold.ttf"; sourceTree = "<group>"; };
 		D7FC91182667694E0049E1AA /* Teko-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Medium.ttf"; sourceTree = "<group>"; };
 		D7FC91192667694E0049E1AA /* Teko-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -140,12 +140,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D79D99EE269D969200B0BA73 /* GoogleUtilities.framework in Frameworks */,
-				D79D99EB269D969200B0BA73 /* GoogleMobileAds.framework in Frameworks */,
-				D79D99EA269D969200B0BA73 /* GoogleAppMeasurement.framework in Frameworks */,
-				D79D99EF269D969200B0BA73 /* nanopb.framework in Frameworks */,
-				D79D99ED269D969200B0BA73 /* UserMessagingPlatform.framework in Frameworks */,
-				D79D99EC269D969200B0BA73 /* PromisesObjC.framework in Frameworks */,
+				D70086B326B0D9E500863760 /* GoogleMobileAds.framework in Frameworks */,
+				D70086AF26B0D9E500863760 /* GoogleUtilities.framework in Frameworks */,
+				D70086B026B0D9E500863760 /* nanopb.framework in Frameworks */,
+				D70086B226B0D9E500863760 /* UserMessagingPlatform.framework in Frameworks */,
+				D70086B426B0D9E500863760 /* GoogleAppMeasurement.framework in Frameworks */,
+				D70086B126B0D9E500863760 /* PromisesObjC.framework in Frameworks */,
 				D72C006A2643CE8900EDDA28 /* Messages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,8 +186,8 @@
 			children = (
 				D7FC91162667694E0049E1AA /* fonts */,
 				D7246F1F2657913300715C2A /* Res */,
-				D72C005C2643CE8600EDDA28 /* QuikBlock */,
-				D72C006B2643CE8900EDDA28 /* QuikBlock MessagesExtension */,
+				D72C005C2643CE8600EDDA28 /* TileDash */,
+				D72C006B2643CE8900EDDA28 /* TileDash MessagesExtension */,
 				D72C00682643CE8900EDDA28 /* Frameworks */,
 				D72C005B2643CE8600EDDA28 /* Products */,
 			);
@@ -196,36 +196,36 @@
 		D72C005B2643CE8600EDDA28 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D72C005A2643CE8600EDDA28 /* QuikBlock.app */,
-				D72C00642643CE8900EDDA28 /* QuikBlock MessagesExtension.appex */,
+				D72C005A2643CE8600EDDA28 /* TileDash.app */,
+				D72C00642643CE8900EDDA28 /* TileDash MessagesExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D72C005C2643CE8600EDDA28 /* QuikBlock */ = {
+		D72C005C2643CE8600EDDA28 /* TileDash */ = {
 			isa = PBXGroup;
 			children = (
 				D72C005D2643CE8900EDDA28 /* Assets.xcassets */,
 				D72C005F2643CE8900EDDA28 /* Info.plist */,
 			);
-			path = QuikBlock;
+			path = TileDash;
 			sourceTree = "<group>";
 		};
 		D72C00682643CE8900EDDA28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D79D99E4269D968F00B0BA73 /* GoogleAppMeasurement.framework */,
-				D79D99E5269D969100B0BA73 /* GoogleMobileAds.framework */,
-				D79D99E8269D969200B0BA73 /* GoogleUtilities.framework */,
-				D79D99E9269D969200B0BA73 /* nanopb.framework */,
-				D79D99E6269D969100B0BA73 /* PromisesObjC.framework */,
-				D79D99E7269D969200B0BA73 /* UserMessagingPlatform.framework */,
+				D70086AE26B0D9E500863760 /* GoogleAppMeasurement.framework */,
+				D70086AD26B0D9E400863760 /* GoogleMobileAds.framework */,
+				D70086A926B0D9DD00863760 /* GoogleUtilities.framework */,
+				D70086AA26B0D9DE00863760 /* nanopb.framework */,
+				D70086AB26B0D9E000863760 /* PromisesObjC.framework */,
+				D70086AC26B0D9E100863760 /* UserMessagingPlatform.framework */,
 				D72C00692643CE8900EDDA28 /* Messages.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D72C006B2643CE8900EDDA28 /* QuikBlock MessagesExtension */ = {
+		D72C006B2643CE8900EDDA28 /* TileDash MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
 				D72C006C2643CE8900EDDA28 /* MessagesViewController.swift */,
@@ -236,14 +236,14 @@
 				D7FEC6412658F5D4007A0182 /* GameViewController.swift */,
 				D75DDD0A265BA9CB00E0DE09 /* ScramblerViewController.swift */,
 				D7F82703265CB766007E7D12 /* MainMenuViewController.swift */,
-				D7F82705265CBD40007E7D12 /* QuikBlock.swift */,
+				D7F82705265CBD40007E7D12 /* TileDash.swift */,
 				D73A57922667FE890074C76A /* WinnerViewController.swift */,
 				D73A57942668027C0074C76A /* LoserViewController.swift */,
 				D7173411267D193A00839D00 /* ResultViewController.swift */,
 				D77F108E2684EBAC00F9433A /* TutorialViewController.swift */,
 				D7A98DB92699355900A5FB11 /* StoreViewController.swift */,
 			);
-			path = "QuikBlock MessagesExtension";
+			path = "TileDash MessagesExtension";
 			sourceTree = "<group>";
 		};
 		D7FC91162667694E0049E1AA /* fonts */ = {
@@ -261,9 +261,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D72C00592643CE8600EDDA28 /* QuikBlock */ = {
+		D72C00592643CE8600EDDA28 /* TileDash */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D72C007A2643CE8A00EDDA28 /* Build configuration list for PBXNativeTarget "QuikBlock" */;
+			buildConfigurationList = D72C007A2643CE8A00EDDA28 /* Build configuration list for PBXNativeTarget "TileDash" */;
 			buildPhases = (
 				D72C00582643CE8600EDDA28 /* Resources */,
 				D72C00792643CE8A00EDDA28 /* Embed App Extensions */,
@@ -273,14 +273,14 @@
 			dependencies = (
 				D72C00672643CE8900EDDA28 /* PBXTargetDependency */,
 			);
-			name = QuikBlock;
-			productName = QuikBlock;
-			productReference = D72C005A2643CE8600EDDA28 /* QuikBlock.app */;
+			name = TileDash;
+			productName = TileDash;
+			productReference = D72C005A2643CE8600EDDA28 /* TileDash.app */;
 			productType = "com.apple.product-type.application.messages";
 		};
-		D72C00632643CE8900EDDA28 /* QuikBlock MessagesExtension */ = {
+		D72C00632643CE8900EDDA28 /* TileDash MessagesExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D72C00762643CE8A00EDDA28 /* Build configuration list for PBXNativeTarget "QuikBlock MessagesExtension" */;
+			buildConfigurationList = D72C00762643CE8A00EDDA28 /* Build configuration list for PBXNativeTarget "TileDash MessagesExtension" */;
 			buildPhases = (
 				D72C00602643CE8900EDDA28 /* Sources */,
 				D72C00612643CE8900EDDA28 /* Frameworks */,
@@ -290,9 +290,9 @@
 			);
 			dependencies = (
 			);
-			name = "QuikBlock MessagesExtension";
-			productName = "QuikBlock MessagesExtension";
-			productReference = D72C00642643CE8900EDDA28 /* QuikBlock MessagesExtension.appex */;
+			name = "TileDash MessagesExtension";
+			productName = "TileDash MessagesExtension";
+			productReference = D72C00642643CE8900EDDA28 /* TileDash MessagesExtension.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
 		};
 /* End PBXNativeTarget section */
@@ -312,7 +312,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D72C00572643CE8500EDDA28 /* Build configuration list for PBXProject "QuikBlock" */;
+			buildConfigurationList = D72C00572643CE8500EDDA28 /* Build configuration list for PBXProject "TileDash" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -325,8 +325,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D72C00592643CE8600EDDA28 /* QuikBlock */,
-				D72C00632643CE8900EDDA28 /* QuikBlock MessagesExtension */,
+				D72C00592643CE8600EDDA28 /* TileDash */,
+				D72C00632643CE8900EDDA28 /* TileDash MessagesExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -383,7 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D73A57952668027C0074C76A /* LoserViewController.swift in Sources */,
-				D7F82706265CBD40007E7D12 /* QuikBlock.swift in Sources */,
+				D7F82706265CBD40007E7D12 /* TileDash.swift in Sources */,
 				D7A98DBA2699355900A5FB11 /* StoreViewController.swift in Sources */,
 				D77F108F2684EBAC00F9433A /* TutorialViewController.swift in Sources */,
 				D7FEC6422658F5D4007A0182 /* GameViewController.swift in Sources */,
@@ -401,7 +401,7 @@
 /* Begin PBXTargetDependency section */
 		D72C00672643CE8900EDDA28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D72C00632643CE8900EDDA28 /* QuikBlock MessagesExtension */;
+			target = D72C00632643CE8900EDDA28 /* TileDash MessagesExtension */;
 			targetProxy = D72C00662643CE8900EDDA28 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -548,16 +548,16 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "QuikBlock MessagesExtension/Info.plist";
+				INFOPLIST_FILE = "TileDash MessagesExtension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.quikblock.extension;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.tiledash.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = quikblock_extension_provision_development;
+				PROVISIONING_PROFILE_SPECIFIER = provision_development_tiledash_extension;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -576,16 +576,16 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "QuikBlock MessagesExtension/Info.plist";
+				INFOPLIST_FILE = "TileDash MessagesExtension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.quikblock.extension;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.tiledash.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = quikblock_extension_provision_distribution;
+				PROVISIONING_PROFILE_SPECIFIER = provision_distribution_tiledash_extension;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -601,11 +601,11 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 3U9FTFZ73K;
-				INFOPLIST_FILE = QuikBlock/Info.plist;
-				MARKETING_VERSION = 0.1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.quikblock;
+				INFOPLIST_FILE = TileDash/Info.plist;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.tiledash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = QuikBlock_provision_development;
+				PROVISIONING_PROFILE_SPECIFIER = provision_development_tiledash;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -620,11 +620,11 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 3U9FTFZ73K;
-				INFOPLIST_FILE = QuikBlock/Info.plist;
-				MARKETING_VERSION = 0.1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.quikblock;
+				INFOPLIST_FILE = TileDash/Info.plist;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.tiledash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = QuikBlock_provision_destribution;
+				PROVISIONING_PROFILE_SPECIFIER = provision_distribution_tiledash;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -633,7 +633,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D72C00572643CE8500EDDA28 /* Build configuration list for PBXProject "QuikBlock" */ = {
+		D72C00572643CE8500EDDA28 /* Build configuration list for PBXProject "TileDash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D72C00742643CE8A00EDDA28 /* Debug */,
@@ -642,7 +642,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D72C00762643CE8A00EDDA28 /* Build configuration list for PBXNativeTarget "QuikBlock MessagesExtension" */ = {
+		D72C00762643CE8A00EDDA28 /* Build configuration list for PBXNativeTarget "TileDash MessagesExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D72C00772643CE8A00EDDA28 /* Debug */,
@@ -651,7 +651,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D72C007A2643CE8A00EDDA28 /* Build configuration list for PBXNativeTarget "QuikBlock" */ = {
+		D72C007A2643CE8A00EDDA28 /* Build configuration list for PBXNativeTarget "TileDash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D72C007B2643CE8A00EDDA28 /* Debug */,

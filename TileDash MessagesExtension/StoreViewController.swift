@@ -1,6 +1,6 @@
 //
 //  StoreViewController.swift
-//  QuikBlock MessagesExtension
+//  TileDash MessagesExtension
 //
 //  Created by dev on 7/9/21.
 //
