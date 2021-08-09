@@ -16,6 +16,7 @@ class MessagesViewController: MSMessagesAppViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         MessagesViewController.messagesVC = self
         GADMobileAds.sharedInstance().start(completionHandler: nil)
     }
@@ -27,6 +28,12 @@ class MessagesViewController: MSMessagesAppViewController {
             let components = URLComponents(url: messageURL, resolvingAgainstBaseURL: false)
             TileDash.setData(conversation:conversation, components: components!)
             presentGameViewController()
+            
+            // waiting for opponent
+            if TileDash._my_score == 0 && TileDash.isMyMessage(conversation) {
+                gameVC?.presentWaiting()
+            }
+            
             checkWinner()
         } else {
             presentMainMenuViewController()
@@ -40,7 +47,7 @@ class MessagesViewController: MSMessagesAppViewController {
             if incomingSession == conversation.selectedMessage?.session {
                 if let messageURL = conversation.selectedMessage?.url {                    
                     let components = URLComponents(url: messageURL, resolvingAgainstBaseURL: false)
-                    TileDash.setReady(conversation: conversation, components: components!)
+                    //TileDash.setReady(conversation: conversation, components: components!)
                     TileDash.setOpponent(conversation: conversation, components: components!)
                     gameVC!.updateOpponent()
                     checkWinner()

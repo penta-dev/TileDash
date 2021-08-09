@@ -8,7 +8,7 @@
 import UIKit
 
 class ScramblerViewController: UIViewController {
-
+    var _theme: Int!
     var _cell: [UIImageView]!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class ScramblerViewController: UIViewController {
     }
     func refresh() {
         for i in stride(from: 0, to: 9, by: 1) {
-            _cell[i].image = TileDash.getImage(value: TileDash._scrambler[i])
+            _cell[i].image = TileDash.getImage(theme:_theme, value: TileDash._scrambler[i])
         }
     }
 }

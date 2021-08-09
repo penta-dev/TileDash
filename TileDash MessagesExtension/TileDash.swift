@@ -11,7 +11,10 @@ import Messages
 
 class TileDash {
     static var _time: Int = 0
-    static var _ready: Bool!
+    //static var _ready: Bool!
+    
+    static var _my_theme: Int!
+    static var _op_theme: Int!
     
     static var _my_score: Int!
     static var _op_score: Int!
@@ -27,7 +30,9 @@ class TileDash {
         return "\(h):\(m):\(s)"
     }
     static func start() {
-        _ready = false
+        //_ready = false
+        _my_theme = UserDefaults.standard.integer(forKey: StoreVC.theme_index_key)
+        _op_theme = 0
         _my_score = 0
         _op_score = 0
         scramble()
@@ -81,44 +86,102 @@ class TileDash {
             _me.append(row)
         }
     }
-    static func getImage(value: Int) -> UIImage? {
+    static func getImage(theme: Int, value: Int) -> UIImage? {
         var str: String!
-        switch value {
-        case 0:
-            str = "block_b.png"
+        switch theme {
+        case StoreVC.theme_normal_id:
+            switch value {
+            case 0:
+                str = "block_b.png"
+                break
+            case 1:
+                str = "block_g.png"
+                break
+            case 2:
+                str = "block_o.png"
+                break
+            case 3:
+                str = "block_r.png"
+                break
+            case 4:
+                str = "block_w.png"
+                break
+            case 5:
+                str = "block_y.png"
+                break
+            default:
+                str = ""
+                break
+            }
             break
-        case 1:
-            str = "block_g.png"
+        case StoreVC.theme_dino_id:
+            switch value {
+            case 0:
+                str = "block_b_dino.png"
+                break
+            case 1:
+                str = "block_g_dino.png"
+                break
+            case 2:
+                str = "block_o_dino.png"
+                break
+            case 3:
+                str = "block_r_dino.png"
+                break
+            case 4:
+                str = "block_w_dino.png"
+                break
+            case 5:
+                str = "block_y_dino.png"
+                break
+            default:
+                str = ""
+                break
+            }
             break
-        case 2:
-            str = "block_o.png"
-            break
-        case 3:
-            str = "block_r.png"
-            break
-        case 4:
-            str = "block_w.png"
-            break
-        case 5:
-            str = "block_y.png"
+        case StoreVC.theme_space_id:
+            switch value {
+            case 0:
+                str = "block_b_space.png"
+                break
+            case 1:
+                str = "block_g_space.png"
+                break
+            case 2:
+                str = "block_o_space.png"
+                break
+            case 3:
+                str = "block_r_space.png"
+                break
+            case 4:
+                str = "block_w_space.png"
+                break
+            case 5:
+                str = "block_y_space.png"
+                break
+            default:
+                str = ""
+                break
+            }
             break
         default:
             str = ""
             break
         }
+        
         return UIImage(named: str)
     }
     static func getURLComponents() -> URLComponents {
         var urlComponents = URLComponents()
         urlComponents.queryItems = []
-        
-        /*// sender uuid
-        let senderQuery = URLQueryItem(name: "sender", value: UIDevice.current.identifierForVendor?.uuidString)
-        urlComponents.queryItems?.append(senderQuery)*/
-        
+                
         // ready
-        let readyQuery = URLQueryItem(name: "ready", value: "\(_ready!)")
-        urlComponents.queryItems?.append(readyQuery)
+        //let readyQuery = URLQueryItem(name: "ready", value: "\(_ready!)")
+        //urlComponents.queryItems?.append(readyQuery)
+        
+        // theme
+        urlComponents.queryItems?.append(URLQueryItem(name: "my_theme", value: "\(_my_theme!)"))
+        urlComponents.queryItems?.append(URLQueryItem(name: "op_theme", value: "\(_op_theme!)"))
         
         // score
         urlComponents.queryItems?.append(URLQueryItem(name: "my_score", value: "\(_my_score!)"))
@@ -157,6 +220,7 @@ class TileDash {
         }
         return false
     }
+    /*
     static func setReady(conversation: MSConversation, components: URLComponents) {
         for ( _, queryItem) in (components.queryItems?.enumerated())! {
             let name = queryItem.name
@@ -167,7 +231,7 @@ class TileDash {
         if isMyMessage(conversation) == false {
             _ready = true
         }
-    }
+    }*/
     static func setScrambler(components: URLComponents) {
         _scrambler = [0,0,0,0,0,0,0,0,0]
         for ( _, queryItem) in (components.queryItems?.enumerated())! {
@@ -179,24 +243,21 @@ class TileDash {
             }
         }
     }
-    /*
-    static func getOpponentKey(conversation: MSConversation, components: URLComponents) -> String {
-        let myid = conversation.localParticipantIdentifier.uuidString
-        var senderid: String!
+    static func setTheme(conversation: MSConversation, components: URLComponents) {
+        var opkey: String!  // opponent theme
+        if isMyMessage(conversation) {
+            opkey = "op_theme"
+        } else {
+            opkey = "my_theme"
+        }
         for ( _, queryItem) in (components.queryItems?.enumerated())! {
-            let name = queryItem.name
-            if name == "sender" {
-                senderid = queryItem.value!
+            if queryItem.name == opkey {
+                _op_theme = Int(queryItem.value!)!
             }
         }
-        var key: String!
-        if senderid == myid {
-            key = "op"
-        }else{
-            key = "me"
-        }
-        return key
-    }*/
+        
+        _my_theme = UserDefaults.standard.integer(forKey: StoreVC.theme_index_key)  // my theme
+    }
     // MARK: setOpponent
     static func setOpponent(conversation: MSConversation, components: URLComponents) {
         _opponent = [
@@ -229,48 +290,6 @@ class TileDash {
             }
         }
     }
-    static func setOpponentForReceive(conversation: MSConversation, components: URLComponents) {
-        _opponent = [
-            [0,0,0,0,0],
-            [0,0,0,0,0],
-            [0,0,0,0,0],
-            [0,0,0,0,0],
-            [0,0,0,0,0]
-        ]
-        let score_key = "my_score"
-        let key = "meb"
-        for ( _, queryItem) in (components.queryItems?.enumerated())! {
-            let name = queryItem.name
-            if name.contains(key) {
-                let c1 = name[String.Index.init(utf16Offset: 3, in: name)]
-                let c2 = name[String.Index.init(utf16Offset: 4, in: name)]
-                let i = Int(String(c1))!
-                let j = Int(String(c2))!
-                _opponent[i][j] = Int(queryItem.value!)!
-            }
-            if name == score_key {
-                _op_score = Int(queryItem.value!)!
-            }
-        }
-    }
-    /*
-    static func getMyKey(conversation: MSConversation, components: URLComponents) -> String {
-        let myid = conversation.localParticipantIdentifier.uuidString
-        var senderid: String!
-        for ( _, queryItem) in (components.queryItems?.enumerated())! {
-            let name = queryItem.name
-            if name == "sender" {
-                senderid = queryItem.value!
-            }
-        }
-        var key: String!
-        if senderid == myid {
-            key = "me"
-        }else{
-            key = "op"
-        }
-        return key
-    }*/
     static func setMe(conversation: MSConversation, components: URLComponents) {
         _me = [
             [0,0,0,0,0],
@@ -303,7 +322,8 @@ class TileDash {
         }
     }
     static func setData(conversation: MSConversation, components: URLComponents) {
-        setReady(conversation: conversation, components: components)
+        //setReady(conversation: conversation, components: components)
+        setTheme(conversation: conversation, components: components)
         setScrambler(components: components)
         setOpponent(conversation:conversation, components: components)
         setMe(conversation:conversation, components: components)
@@ -315,12 +335,24 @@ class TileDash {
             let layout = MSMessageTemplateLayout()
             layout.caption = "TileDash play"
             message.layout = layout
-            message.url = TileDash.getURLComponents().url
-            
+            message.url = TileDash.getURLComponents().url            
 
             MessagesViewController.messagesVC.activeConversation?.send(message, completionHandler: { error in
             })
         }
+    }
+    static func sendRematch() {        
+        TileDash.start()
+        
+        let session = MSSession()
+        let message = MSMessage(session: session)
+        let layout = MSMessageTemplateLayout()
+        layout.caption = "Let's play Tile Dash"
+        message.layout = layout
+        message.url = TileDash.getURLComponents().url
+
+        MessagesViewController.messagesVC.activeConversation?.send(message, completionHandler: { error in
+        })
     }
     static func checkWinner() -> Int {
         if  _scrambler[0] == _me[1][1] &&

@@ -9,13 +9,9 @@ import UIKit
 
 class LoserViewController: ResultViewController {
 
-    @IBOutlet weak var _lbTime: UILabel!
-    @IBOutlet weak var _lbScore: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        _lbTime.text = TileDash.time_string()
-        _lbScore.text = "\(TileDash._my_score!)"
     }
 }

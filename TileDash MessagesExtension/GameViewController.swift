@@ -30,7 +30,6 @@ class GameViewController: UIViewController {
         presentScrambler()
         presentOpponent()
         presentBoard()
-        //presentWaiting()
         
         updateScore()
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { t in
@@ -42,9 +41,15 @@ class GameViewController: UIViewController {
         presentTutorial()
         
         // Admob Banner
-        _bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-        _bannerView.rootViewController = self
-        _bannerView.load(GADRequest())
+        if false == UserDefaults.standard.bool(forKey: StoreVC.remove_ads_key) {            
+            _bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+            _bannerView.rootViewController = self
+            _bannerView.load(GADRequest())
+        }
+    }
+    public func presentWaiting() {
+        _waitingAC = UIAlertController(title: nil, message: "Please wait for opponent...", preferredStyle: .alert)
+        present(_waitingAC!, animated: true, completion: nil)
     }
     func updateOpponent() {
         _opponentVC.setBoard(TileDash._opponent)
@@ -57,7 +62,9 @@ class GameViewController: UIViewController {
         _lbScore.text = String(TileDash._my_score)
     }
     private func presentScrambler() {
-        let controller = storyboard!.instantiateViewController(identifier: "ScramblerViewController") as ScramblerViewController        
+        let controller = storyboard!.instantiateViewController(identifier: "ScramblerViewController") as ScramblerViewController
+        
+        controller._theme = TileDash._my_theme
         
         controller.willMove(toParent: self)
         addChild(controller)
@@ -76,6 +83,7 @@ class GameViewController: UIViewController {
         
         controller._touchEnable = false
         controller.initCellViews()
+        controller._theme = TileDash._op_theme
         controller.setBoard(TileDash._opponent)
         
         controller.willMove(toParent: self)
@@ -95,6 +103,7 @@ class GameViewController: UIViewController {
         
         controller._touchEnable = true
         controller.initCellViews()
+        controller._theme = TileDash._my_theme
         controller.setBoard(TileDash._me)
         controller._gameVC = self
         
@@ -122,11 +131,5 @@ class GameViewController: UIViewController {
         controller.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         controller.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         controller.didMove(toParent: self)
-    }
-    private func presentWaiting() {
-        if TileDash._ready == false {
-            _waitingAC = UIAlertController(title: nil, message: "Please wait for opponent...", preferredStyle: .alert)
-            present(_waitingAC!, animated: true, completion: nil)
-        }
     }
 }

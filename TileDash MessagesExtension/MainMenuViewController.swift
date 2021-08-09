@@ -31,7 +31,7 @@ class MainMenuViewController: UIViewController {
     }
     
     @IBAction func onClickedPurchase(_ sender: Any) {
-        let controller = storyboard!.instantiateViewController(identifier: "StoreViewController") as! StoreViewController
+        let controller = storyboard!.instantiateViewController(identifier: "StoreViewController") as! StoreVC
         present(controller, animated: true, completion: nil)
         MessagesViewController.messagesVC.requestPresentationStyle(.expanded)
     }

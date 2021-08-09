@@ -13,6 +13,7 @@ class BoardViewController: UIViewController {
     var _messageVC: MessagesViewController!
     var _gameVC: GameViewController?
     
+    var _theme: Int!
     var _value: [[Int]]!
     var _cell:[[UIImageView]]!
     var _cellSize: CGFloat!
@@ -60,7 +61,7 @@ class BoardViewController: UIViewController {
     func refreshBoard() {
         for i in stride(from: 0, to: 5, by: 1) {
             for j in stride(from: 0, to: 5, by: 1) {
-                _cell[i][j].image = TileDash.getImage(value: _value[i][j])
+                _cell[i][j].image = TileDash.getImage(theme: _theme, value: _value[i][j])
             }
         }
     }
