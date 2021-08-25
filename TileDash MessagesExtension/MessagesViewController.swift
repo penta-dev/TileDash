@@ -29,9 +29,15 @@ class MessagesViewController: MSMessagesAppViewController {
             TileDash.setData(conversation:conversation, components: components!)
             presentGameViewController()
             
-            // waiting for opponent
-            if TileDash._my_score == 0 && TileDash.isMyMessage(conversation) {
-                gameVC?.presentWaiting()
+            // waiting & timer
+            if TileDash.isMyMessage(conversation) {
+                if TileDash._my_score == 0 {
+                    gameVC?.presentWaiting()    // start timer with removing waiting alert
+                }else{
+                    gameVC?.startTimer()
+                }
+            }else{
+                gameVC?.startTimer()
             }
             
             checkWinner()
@@ -109,13 +115,18 @@ class MessagesViewController: MSMessagesAppViewController {
         controller.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         controller.didMove(toParent: self)
     }
+    // MARK: - check winner
     func checkWinner() {
         let result = TileDash.checkWinner()
         if result == 1 {
             presentWinnerVC()
+            TileDash.playSound(name: "win")
+            gameVC?.stopTimer()
         }
         if result == -1 {
             presentLoserVC()
+            TileDash.playSound(name: "lose")
+            gameVC?.stopTimer()
         }
     }
 }

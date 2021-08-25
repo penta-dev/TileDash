@@ -4,7 +4,7 @@
 //
 //  Created by Jason Zheng on 8/24/16.
 //  Copyright © 2016 Jason Zheng. All rights reserved.
-//
+//  https://github.com/atjason/IAPHelper
 
 import StoreKit
 

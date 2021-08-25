@@ -23,6 +23,7 @@ class GameViewController: UIViewController {
     var _boardVC: BoardViewController!
     var _opponentVC: BoardViewController!
     var _waitingAC: UIAlertController?
+    var _timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +31,7 @@ class GameViewController: UIViewController {
         presentScrambler()
         presentOpponent()
         presentBoard()
-        
         updateScore()
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { t in
-            TileDash._time += 1
-            self._lbTime.text = TileDash.time_string()
-        }
         
         // Tutorial
         presentTutorial()
@@ -48,14 +44,26 @@ class GameViewController: UIViewController {
         }
     }
     public func presentWaiting() {
-        _waitingAC = UIAlertController(title: nil, message: "Please wait for opponent...", preferredStyle: .alert)
+        _waitingAC = UIAlertController(title: nil, message: "Waiting for Opponent", preferredStyle: .alert)
         present(_waitingAC!, animated: true, completion: nil)
+    }
+    public func startTimer() {
+        _timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { t in
+            TileDash._time += 1
+            self._lbTime.text = TileDash.time_string()
+        }
+    }
+    public func stopTimer() {
+        _timer?.invalidate()
+        _timer = nil
     }
     func updateOpponent() {
         _opponentVC.setBoard(TileDash._opponent)
         if let ac = _waitingAC {    // remove waiting... alert
             ac.dismiss(animated: true, completion: nil)
             _waitingAC = nil
+            
+            startTimer()    // timer with removing waiting screen
         }
     }
     func updateScore() {

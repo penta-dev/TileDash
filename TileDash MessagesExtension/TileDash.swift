@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Messages
+import AVFoundation
 
 class TileDash {
     static var _time: Int = 0
@@ -89,7 +90,7 @@ class TileDash {
     static func getImage(theme: Int, value: Int) -> UIImage? {
         var str: String!
         switch theme {
-        case StoreVC.theme_normal_id:
+        case StoreVC.theme_default_id:
             switch value {
             case 0:
                 str = "block_b.png"
@@ -378,5 +379,14 @@ class TileDash {
             return -1
         }
         return 0
+    }
+    static func playSound(name:String) {
+        let url = Bundle.main.url(forResource: name, withExtension: "mp3")
+        do {
+            let audioPlayer = try AVAudioPlayer(contentsOf: url!)
+            audioPlayer.play()
+        } catch {
+            print("couldn't load sound file")
+        }
     }
 }

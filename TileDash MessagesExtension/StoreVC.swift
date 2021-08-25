@@ -13,10 +13,13 @@ class StoreVC: UIViewController {
     static let dino_theme_key = "tiledash_theme_dino"
     static let space_theme_key = "tiledash_theme_space"
     static let theme_index_key = "tiledash_theme_index"
-    static let theme_normal_id = 0
+    static let theme_default_id = 0
     static let theme_dino_id = 1
     static let theme_space_id = 2
 
+    // default theme
+    @IBOutlet weak var lbDefaultPrice: UILabel!
+    
     // dino theme
     @IBOutlet weak var imageDinoLock: UIImageView!
     @IBOutlet weak var lbDinoPrice: UILabel!
@@ -48,12 +51,6 @@ class StoreVC: UIViewController {
                     UserDefaults.standard.set(true, forKey: StoreVC.dino_theme_key)  // purchase
                     UserDefaults.standard.set(StoreVC.theme_dino_id, forKey: StoreVC.theme_index_key) // choose dino
                     self.refresh()
-                } else if let error = error as NSError? {
-                    if error.code == SKError.Code.paymentCancelled.rawValue {
-                      // User cancelled
-                    } else {
-                      // Some error happened
-                    }
                 }
             })
         }
@@ -68,12 +65,6 @@ class StoreVC: UIViewController {
                     UserDefaults.standard.set(true, forKey: StoreVC.space_theme_key)  // purchase
                     UserDefaults.standard.set(StoreVC.theme_space_id, forKey: StoreVC.theme_index_key)    // choose space
                     self.refresh()
-                } else if let error = error as NSError? {
-                    if error.code == SKError.Code.paymentCancelled.rawValue {
-                      // User cancelled
-                    } else {
-                      // Some error happened
-                    }
                 }
             })
         }
@@ -83,14 +74,22 @@ class StoreVC: UIViewController {
             if productIdentifier != nil {
                 UserDefaults.standard.set(true, forKey: StoreVC.remove_ads_key)  // purchase
                 self.refresh()
-            } else if let error = error as NSError? {
-                if error.code == SKError.Code.paymentCancelled.rawValue {
-                  // User cancelled
-                } else {
-                  // Some error happened
-                }
             }
         })
+    }
+    @IBAction func onClickedDefault(_ sender: Any) {
+        UserDefaults.standard.set(StoreVC.theme_default_id, forKey: StoreVC.theme_index_key)    // choose space
+        self.refresh()
+    }
+    @IBAction func onClickedRestore(_ sender: Any) {
+        IAP.restorePurchases { (productIdentifiers, error) in
+             if !productIdentifiers.isEmpty {
+                 // Products restored
+                for productId in productIdentifiers {
+                    UserDefaults.standard.set(true, forKey: productId)  // purchase
+                }
+             }
+        }
     }
     func refresh()
     {
@@ -102,6 +101,13 @@ class StoreVC: UIViewController {
         }
         
         let theme_id = UserDefaults.standard.integer(forKey: StoreVC.theme_index_key)   // current theme
+        
+        // default theme
+        if theme_id == StoreVC.theme_default_id {
+            lbDefaultPrice.text = "Using"
+        }else{
+            lbDefaultPrice.text = "Tap to use"
+        }
         
         // purchased dino theme
         if UserDefaults.standard.bool(forKey: StoreVC.dino_theme_key) {

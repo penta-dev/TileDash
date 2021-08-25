@@ -40,11 +40,20 @@
 		D767641526B7874D0001ECFB /* block_r_dino.png in Resources */ = {isa = PBXBuildFile; fileRef = D767640926B7874C0001ECFB /* block_r_dino.png */; };
 		D767641626B7874D0001ECFB /* block_y_space.png in Resources */ = {isa = PBXBuildFile; fileRef = D767640A26B7874D0001ECFB /* block_y_space.png */; };
 		D767641726B7874D0001ECFB /* block_b_dino.png in Resources */ = {isa = PBXBuildFile; fileRef = D767640B26B7874D0001ECFB /* block_b_dino.png */; };
-		D76E2AE526B2D28000CAE0D2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76E2AE426B2D28000CAE0D2 /* StoreKit.framework */; };
+		D76D262126D629D000B3E2DC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76D261B26D629CD00B3E2DC /* GoogleMobileAds.framework */; };
+		D76D262226D629D000B3E2DC /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76D261C26D629CD00B3E2DC /* GoogleUtilities.framework */; };
+		D76D262326D629D000B3E2DC /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76D261D26D629CF00B3E2DC /* PromisesObjC.framework */; };
+		D76D262426D629D000B3E2DC /* UserMessagingPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76D261E26D629CF00B3E2DC /* UserMessagingPlatform.framework */; };
+		D76D262526D629D000B3E2DC /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76D261F26D629CF00B3E2DC /* GoogleAppMeasurement.framework */; };
+		D76D262626D629D000B3E2DC /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76D262026D629CF00B3E2DC /* nanopb.framework */; };
 		D76E2AE726B2D7DD00CAE0D2 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E2AE626B2D7DD00CAE0D2 /* IAPHelper.swift */; };
 		D77F108D2684E86600F9433A /* pink_rect.png in Resources */ = {isa = PBXBuildFile; fileRef = D77F108C2684E86600F9433A /* pink_rect.png */; };
 		D77F108F2684EBAC00F9433A /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77F108E2684EBAC00F9433A /* TutorialViewController.swift */; };
 		D783BD4026856286000A3670 /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = D783BD3F26856286000A3670 /* hand.png */; };
+		D795044F26D1BBA60051A032 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D795044E26D1BBA60051A032 /* AVFoundation.framework */; };
+		D795045426D1BF1F0051A032 /* move.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D795045126D1BF1E0051A032 /* move.mp3 */; };
+		D795045526D1BF1F0051A032 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D795045226D1BF1F0051A032 /* win.mp3 */; };
+		D795045626D1BF1F0051A032 /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D795045326D1BF1F0051A032 /* lose.mp3 */; };
 		D7A61B212686B477008ADDB5 /* btn_rematch.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A61B1F2686B477008ADDB5 /* btn_rematch.png */; };
 		D7A61B222686B477008ADDB5 /* btn_quit.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A61B202686B477008ADDB5 /* btn_quit.png */; };
 		D7A98DBA2699355900A5FB11 /* StoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A98DB92699355900A5FB11 /* StoreVC.swift */; };
@@ -55,12 +64,7 @@
 		D7A98DC52699362400A5FB11 /* icon_coming_soon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A98DBF2699362400A5FB11 /* icon_coming_soon.png */; };
 		D7A98DC62699362400A5FB11 /* icon_question.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A98DC02699362400A5FB11 /* icon_question.png */; };
 		D7A98DC82699399700A5FB11 /* btn_home.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A98DC72699399700A5FB11 /* btn_home.png */; };
-		D7EF463D26C02CFB00464204 /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EF463726C02CF600464204 /* PromisesObjC.framework */; };
-		D7EF463E26C02CFB00464204 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EF463826C02CF600464204 /* nanopb.framework */; };
-		D7EF463F26C02CFB00464204 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EF463926C02CF600464204 /* GoogleUtilities.framework */; };
-		D7EF464026C02CFB00464204 /* UserMessagingPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EF463A26C02CF700464204 /* UserMessagingPlatform.framework */; };
-		D7EF464126C02CFB00464204 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EF463B26C02CF900464204 /* GoogleMobileAds.framework */; };
-		D7EF464226C02CFB00464204 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EF463C26C02CFB00464204 /* GoogleAppMeasurement.framework */; };
+		D7B46B9326D62D9E0086FB90 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76E2AE426B2D28000CAE0D2 /* StoreKit.framework */; };
 		D7F82704265CB766007E7D12 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F82703265CB766007E7D12 /* MainMenuViewController.swift */; };
 		D7F82706265CBD40007E7D12 /* TileDash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F82705265CBD40007E7D12 /* TileDash.swift */; };
 		D7FC911C2667694E0049E1AA /* Teko-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7FC91172667694E0049E1AA /* Teko-Bold.ttf */; };
@@ -132,11 +136,21 @@
 		D767640926B7874C0001ECFB /* block_r_dino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_r_dino.png; sourceTree = "<group>"; };
 		D767640A26B7874D0001ECFB /* block_y_space.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_y_space.png; sourceTree = "<group>"; };
 		D767640B26B7874D0001ECFB /* block_b_dino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_b_dino.png; sourceTree = "<group>"; };
+		D76D261B26D629CD00B3E2DC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		D76D261C26D629CD00B3E2DC /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		D76D261D26D629CF00B3E2DC /* PromisesObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromisesObjC.framework; sourceTree = "<group>"; };
+		D76D261E26D629CF00B3E2DC /* UserMessagingPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UserMessagingPlatform.framework; sourceTree = "<group>"; };
+		D76D261F26D629CF00B3E2DC /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		D76D262026D629CF00B3E2DC /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
 		D76E2AE426B2D28000CAE0D2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D76E2AE626B2D7DD00CAE0D2 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		D77F108C2684E86600F9433A /* pink_rect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pink_rect.png; sourceTree = "<group>"; };
 		D77F108E2684EBAC00F9433A /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		D783BD3F26856286000A3670 /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand.png; sourceTree = "<group>"; };
+		D795044E26D1BBA60051A032 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D795045126D1BF1E0051A032 /* move.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = move.mp3; sourceTree = "<group>"; };
+		D795045226D1BF1F0051A032 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		D795045326D1BF1F0051A032 /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
 		D7A61B1F2686B477008ADDB5 /* btn_rematch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_rematch.png; sourceTree = "<group>"; };
 		D7A61B202686B477008ADDB5 /* btn_quit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_quit.png; sourceTree = "<group>"; };
 		D7A98DB92699355900A5FB11 /* StoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVC.swift; sourceTree = "<group>"; };
@@ -147,12 +161,6 @@
 		D7A98DBF2699362400A5FB11 /* icon_coming_soon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_coming_soon.png; sourceTree = "<group>"; };
 		D7A98DC02699362400A5FB11 /* icon_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_question.png; sourceTree = "<group>"; };
 		D7A98DC72699399700A5FB11 /* btn_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_home.png; sourceTree = "<group>"; };
-		D7EF463726C02CF600464204 /* PromisesObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromisesObjC.framework; sourceTree = "<group>"; };
-		D7EF463826C02CF600464204 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
-		D7EF463926C02CF600464204 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
-		D7EF463A26C02CF700464204 /* UserMessagingPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UserMessagingPlatform.framework; sourceTree = "<group>"; };
-		D7EF463B26C02CF900464204 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		D7EF463C26C02CFB00464204 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
 		D7F82703265CB766007E7D12 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		D7F82705265CBD40007E7D12 /* TileDash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileDash.swift; sourceTree = "<group>"; };
 		D7FC91172667694E0049E1AA /* Teko-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Bold.ttf"; sourceTree = "<group>"; };
@@ -168,14 +176,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D76E2AE526B2D28000CAE0D2 /* StoreKit.framework in Frameworks */,
-				D7EF464026C02CFB00464204 /* UserMessagingPlatform.framework in Frameworks */,
+				D7B46B9326D62D9E0086FB90 /* StoreKit.framework in Frameworks */,
+				D795044F26D1BBA60051A032 /* AVFoundation.framework in Frameworks */,
+				D76D262326D629D000B3E2DC /* PromisesObjC.framework in Frameworks */,
+				D76D262126D629D000B3E2DC /* GoogleMobileAds.framework in Frameworks */,
+				D76D262626D629D000B3E2DC /* nanopb.framework in Frameworks */,
+				D76D262226D629D000B3E2DC /* GoogleUtilities.framework in Frameworks */,
+				D76D262426D629D000B3E2DC /* UserMessagingPlatform.framework in Frameworks */,
+				D76D262526D629D000B3E2DC /* GoogleAppMeasurement.framework in Frameworks */,
 				D72C006A2643CE8900EDDA28 /* Messages.framework in Frameworks */,
-				D7EF463E26C02CFB00464204 /* nanopb.framework in Frameworks */,
-				D7EF463F26C02CFB00464204 /* GoogleUtilities.framework in Frameworks */,
-				D7EF464126C02CFB00464204 /* GoogleMobileAds.framework in Frameworks */,
-				D7EF464226C02CFB00464204 /* GoogleAppMeasurement.framework in Frameworks */,
-				D7EF463D26C02CFB00464204 /* PromisesObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +234,7 @@
 		D72C00532643CE8500EDDA28 = {
 			isa = PBXGroup;
 			children = (
+				D795045026D1BEE00051A032 /* sounds */,
 				D7FC91162667694E0049E1AA /* fonts */,
 				D7246F1F2657913300715C2A /* Res */,
 				D72C005C2643CE8600EDDA28 /* TileDash */,
@@ -255,12 +265,13 @@
 		D72C00682643CE8900EDDA28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D7EF463C26C02CFB00464204 /* GoogleAppMeasurement.framework */,
-				D7EF463B26C02CF900464204 /* GoogleMobileAds.framework */,
-				D7EF463926C02CF600464204 /* GoogleUtilities.framework */,
-				D7EF463826C02CF600464204 /* nanopb.framework */,
-				D7EF463726C02CF600464204 /* PromisesObjC.framework */,
-				D7EF463A26C02CF700464204 /* UserMessagingPlatform.framework */,
+				D76D261F26D629CF00B3E2DC /* GoogleAppMeasurement.framework */,
+				D76D261B26D629CD00B3E2DC /* GoogleMobileAds.framework */,
+				D76D261C26D629CD00B3E2DC /* GoogleUtilities.framework */,
+				D76D262026D629CF00B3E2DC /* nanopb.framework */,
+				D76D261D26D629CF00B3E2DC /* PromisesObjC.framework */,
+				D76D261E26D629CF00B3E2DC /* UserMessagingPlatform.framework */,
+				D795044E26D1BBA60051A032 /* AVFoundation.framework */,
 				D76E2AE426B2D28000CAE0D2 /* StoreKit.framework */,
 				D72C00692643CE8900EDDA28 /* Messages.framework */,
 			);
@@ -287,6 +298,16 @@
 				D76E2AE626B2D7DD00CAE0D2 /* IAPHelper.swift */,
 			);
 			path = "TileDash MessagesExtension";
+			sourceTree = "<group>";
+		};
+		D795045026D1BEE00051A032 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D795045326D1BF1F0051A032 /* lose.mp3 */,
+				D795045126D1BF1E0051A032 /* move.mp3 */,
+				D795045226D1BF1F0051A032 /* win.mp3 */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 		D7FC91162667694E0049E1AA /* fonts */ = {
@@ -392,14 +413,17 @@
 				D767641226B7874D0001ECFB /* block_r_space.png in Resources */,
 				D7A61B212686B477008ADDB5 /* btn_rematch.png in Resources */,
 				D7A98DC12699362400A5FB11 /* icon_lock.png in Resources */,
+				D795045426D1BF1F0051A032 /* move.mp3 in Resources */,
 				D767641126B7874D0001ECFB /* block_w_space.png in Resources */,
 				D7FC911F2667694E0049E1AA /* Teko-Regular.ttf in Resources */,
 				D767640C26B7874D0001ECFB /* block_w_dino.png in Resources */,
+				D795045526D1BF1F0051A032 /* win.mp3 in Resources */,
 				D75B205F2666DCDB00117310 /* btn_play.png in Resources */,
 				D70DDE76269ACD0E00B99785 /* logo.png in Resources */,
 				D783BD4026856286000A3670 /* hand.png in Resources */,
 				D7FC91202667694E0049E1AA /* Teko-Light.ttf in Resources */,
 				D767641626B7874D0001ECFB /* block_y_space.png in Resources */,
+				D795045626D1BF1F0051A032 /* lose.mp3 in Resources */,
 				D767640F26B7874D0001ECFB /* block_o_space.png in Resources */,
 				D7A98DC42699362400A5FB11 /* icon_theme1.png in Resources */,
 				D7A98DC52699362400A5FB11 /* icon_coming_soon.png in Resources */,
@@ -610,7 +634,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.tiledash.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = provision_development_tiledash_extension;
@@ -638,7 +662,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.tiledash.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = provision_distribution_tiledash_extension;
@@ -658,7 +682,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 3U9FTFZ73K;
 				INFOPLIST_FILE = TileDash/Info.plist;
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.tiledash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = provision_development_tiledash;
@@ -677,7 +701,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 3U9FTFZ73K;
 				INFOPLIST_FILE = TileDash/Info.plist;
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.tiledash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = provision_distribution_tiledash;

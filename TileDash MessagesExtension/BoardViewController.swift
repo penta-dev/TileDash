@@ -208,5 +208,6 @@ class BoardViewController: UIViewController {
         
         TileDash.sendUpdate()
         MessagesViewController.messagesVC.checkWinner()
+        TileDash.playSound(name: "move")
     }
 }
