@@ -38,7 +38,7 @@ class GameViewController: UIViewController {
         
         // Admob Banner
         if false == UserDefaults.standard.bool(forKey: StoreVC.remove_ads_key) {            
-            _bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+            _bannerView.adUnitID = "ca-app-pub-8304133905640357/1970565051"
             _bannerView.rootViewController = self
             _bannerView.load(GADRequest())
         }

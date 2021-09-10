@@ -64,12 +64,12 @@
 		D7E6F5DC26EB521A00C5E95E /* btn_mute.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E6F5D926EB521A00C5E95E /* btn_mute.png */; };
 		D7E6F5DF26EB52A000C5E95E /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E6F5DD26EB52A000C5E95E /* iOSDevCenters+GIF.swift */; };
 		D7E6F5E026EB52A000C5E95E /* TipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E6F5DE26EB52A000C5E95E /* TipVC.swift */; };
-		D7E6F5E726EB52E000C5E95E /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5E126EB52DD00C5E95E /* GoogleAppMeasurement.framework */; };
-		D7E6F5E826EB52E000C5E95E /* UserMessagingPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5E226EB52DE00C5E95E /* UserMessagingPlatform.framework */; };
-		D7E6F5E926EB52E000C5E95E /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5E326EB52DE00C5E95E /* PromisesObjC.framework */; };
-		D7E6F5EA26EB52E000C5E95E /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5E426EB52DE00C5E95E /* GoogleUtilities.framework */; };
-		D7E6F5EB26EB52E000C5E95E /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5E526EB52DF00C5E95E /* GoogleMobileAds.framework */; };
-		D7E6F5EC26EB52E000C5E95E /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5E626EB52DF00C5E95E /* nanopb.framework */; };
+		D7E6F5F326EB5C3C00C5E95E /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5ED26EB5C3800C5E95E /* GoogleAppMeasurement.framework */; };
+		D7E6F5F426EB5C3C00C5E95E /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5EE26EB5C3B00C5E95E /* GoogleMobileAds.framework */; };
+		D7E6F5F526EB5C3C00C5E95E /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5EF26EB5C3B00C5E95E /* GoogleUtilities.framework */; };
+		D7E6F5F626EB5C3C00C5E95E /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5F026EB5C3C00C5E95E /* PromisesObjC.framework */; };
+		D7E6F5F726EB5C3C00C5E95E /* UserMessagingPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5F126EB5C3C00C5E95E /* UserMessagingPlatform.framework */; };
+		D7E6F5F826EB5C3C00C5E95E /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5F226EB5C3C00C5E95E /* nanopb.framework */; };
 		D7F82704265CB766007E7D12 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F82703265CB766007E7D12 /* MainMenuViewController.swift */; };
 		D7F82706265CBD40007E7D12 /* TileDash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F82705265CBD40007E7D12 /* TileDash.swift */; };
 		D7FC911C2667694E0049E1AA /* Teko-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7FC91172667694E0049E1AA /* Teko-Bold.ttf */; };
@@ -165,12 +165,12 @@
 		D7E6F5D926EB521A00C5E95E /* btn_mute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_mute.png; sourceTree = "<group>"; };
 		D7E6F5DD26EB52A000C5E95E /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
 		D7E6F5DE26EB52A000C5E95E /* TipVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipVC.swift; sourceTree = "<group>"; };
-		D7E6F5E126EB52DD00C5E95E /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
-		D7E6F5E226EB52DE00C5E95E /* UserMessagingPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UserMessagingPlatform.framework; sourceTree = "<group>"; };
-		D7E6F5E326EB52DE00C5E95E /* PromisesObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromisesObjC.framework; sourceTree = "<group>"; };
-		D7E6F5E426EB52DE00C5E95E /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
-		D7E6F5E526EB52DF00C5E95E /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		D7E6F5E626EB52DF00C5E95E /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
+		D7E6F5ED26EB5C3800C5E95E /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		D7E6F5EE26EB5C3B00C5E95E /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		D7E6F5EF26EB5C3B00C5E95E /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		D7E6F5F026EB5C3C00C5E95E /* PromisesObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromisesObjC.framework; sourceTree = "<group>"; };
+		D7E6F5F126EB5C3C00C5E95E /* UserMessagingPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UserMessagingPlatform.framework; sourceTree = "<group>"; };
+		D7E6F5F226EB5C3C00C5E95E /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
 		D7F82703265CB766007E7D12 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		D7F82705265CBD40007E7D12 /* TileDash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileDash.swift; sourceTree = "<group>"; };
 		D7FC91172667694E0049E1AA /* Teko-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Bold.ttf"; sourceTree = "<group>"; };
@@ -186,15 +186,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7E6F5F526EB5C3C00C5E95E /* GoogleUtilities.framework in Frameworks */,
 				D7B46B9326D62D9E0086FB90 /* StoreKit.framework in Frameworks */,
 				D795044F26D1BBA60051A032 /* AVFoundation.framework in Frameworks */,
-				D7E6F5EB26EB52E000C5E95E /* GoogleMobileAds.framework in Frameworks */,
-				D7E6F5E926EB52E000C5E95E /* PromisesObjC.framework in Frameworks */,
-				D7E6F5EC26EB52E000C5E95E /* nanopb.framework in Frameworks */,
-				D7E6F5E826EB52E000C5E95E /* UserMessagingPlatform.framework in Frameworks */,
-				D7E6F5E726EB52E000C5E95E /* GoogleAppMeasurement.framework in Frameworks */,
+				D7E6F5F426EB5C3C00C5E95E /* GoogleMobileAds.framework in Frameworks */,
+				D7E6F5F826EB5C3C00C5E95E /* nanopb.framework in Frameworks */,
+				D7E6F5F326EB5C3C00C5E95E /* GoogleAppMeasurement.framework in Frameworks */,
+				D7E6F5F726EB5C3C00C5E95E /* UserMessagingPlatform.framework in Frameworks */,
 				D72C006A2643CE8900EDDA28 /* Messages.framework in Frameworks */,
-				D7E6F5EA26EB52E000C5E95E /* GoogleUtilities.framework in Frameworks */,
+				D7E6F5F626EB5C3C00C5E95E /* PromisesObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,12 +278,12 @@
 		D72C00682643CE8900EDDA28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D7E6F5E126EB52DD00C5E95E /* GoogleAppMeasurement.framework */,
-				D7E6F5E526EB52DF00C5E95E /* GoogleMobileAds.framework */,
-				D7E6F5E426EB52DE00C5E95E /* GoogleUtilities.framework */,
-				D7E6F5E626EB52DF00C5E95E /* nanopb.framework */,
-				D7E6F5E326EB52DE00C5E95E /* PromisesObjC.framework */,
-				D7E6F5E226EB52DE00C5E95E /* UserMessagingPlatform.framework */,
+				D7E6F5ED26EB5C3800C5E95E /* GoogleAppMeasurement.framework */,
+				D7E6F5EE26EB5C3B00C5E95E /* GoogleMobileAds.framework */,
+				D7E6F5EF26EB5C3B00C5E95E /* GoogleUtilities.framework */,
+				D7E6F5F226EB5C3C00C5E95E /* nanopb.framework */,
+				D7E6F5F026EB5C3C00C5E95E /* PromisesObjC.framework */,
+				D7E6F5F126EB5C3C00C5E95E /* UserMessagingPlatform.framework */,
 				D795044E26D1BBA60051A032 /* AVFoundation.framework */,
 				D76E2AE426B2D28000CAE0D2 /* StoreKit.framework */,
 				D72C00692643CE8900EDDA28 /* Messages.framework */,
@@ -654,7 +654,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.tiledash.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = provision_development_tiledash_extension;
@@ -682,7 +682,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.tiledash.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = provision_distribution_tiledash_extension;
@@ -702,7 +702,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 3U9FTFZ73K;
 				INFOPLIST_FILE = TileDash/Info.plist;
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.tiledash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = provision_development_tiledash;
@@ -721,7 +721,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 3U9FTFZ73K;
 				INFOPLIST_FILE = TileDash/Info.plist;
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xappsys.tiledash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = provision_distribution_tiledash;
