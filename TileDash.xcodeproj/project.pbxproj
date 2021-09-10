@@ -40,12 +40,6 @@
 		D767641526B7874D0001ECFB /* block_r_dino.png in Resources */ = {isa = PBXBuildFile; fileRef = D767640926B7874C0001ECFB /* block_r_dino.png */; };
 		D767641626B7874D0001ECFB /* block_y_space.png in Resources */ = {isa = PBXBuildFile; fileRef = D767640A26B7874D0001ECFB /* block_y_space.png */; };
 		D767641726B7874D0001ECFB /* block_b_dino.png in Resources */ = {isa = PBXBuildFile; fileRef = D767640B26B7874D0001ECFB /* block_b_dino.png */; };
-		D76D262126D629D000B3E2DC /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76D261B26D629CD00B3E2DC /* GoogleMobileAds.framework */; };
-		D76D262226D629D000B3E2DC /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76D261C26D629CD00B3E2DC /* GoogleUtilities.framework */; };
-		D76D262326D629D000B3E2DC /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76D261D26D629CF00B3E2DC /* PromisesObjC.framework */; };
-		D76D262426D629D000B3E2DC /* UserMessagingPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76D261E26D629CF00B3E2DC /* UserMessagingPlatform.framework */; };
-		D76D262526D629D000B3E2DC /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76D261F26D629CF00B3E2DC /* GoogleAppMeasurement.framework */; };
-		D76D262626D629D000B3E2DC /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76D262026D629CF00B3E2DC /* nanopb.framework */; };
 		D76E2AE726B2D7DD00CAE0D2 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76E2AE626B2D7DD00CAE0D2 /* IAPHelper.swift */; };
 		D77F108D2684E86600F9433A /* pink_rect.png in Resources */ = {isa = PBXBuildFile; fileRef = D77F108C2684E86600F9433A /* pink_rect.png */; };
 		D77F108F2684EBAC00F9433A /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77F108E2684EBAC00F9433A /* TutorialViewController.swift */; };
@@ -65,6 +59,17 @@
 		D7A98DC62699362400A5FB11 /* icon_question.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A98DC02699362400A5FB11 /* icon_question.png */; };
 		D7A98DC82699399700A5FB11 /* btn_home.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A98DC72699399700A5FB11 /* btn_home.png */; };
 		D7B46B9326D62D9E0086FB90 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76E2AE426B2D28000CAE0D2 /* StoreKit.framework */; };
+		D7E6F5DA26EB521A00C5E95E /* btn_restore.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E6F5D726EB521900C5E95E /* btn_restore.png */; };
+		D7E6F5DB26EB521A00C5E95E /* TipMessage.gif in Resources */ = {isa = PBXBuildFile; fileRef = D7E6F5D826EB521900C5E95E /* TipMessage.gif */; };
+		D7E6F5DC26EB521A00C5E95E /* btn_mute.png in Resources */ = {isa = PBXBuildFile; fileRef = D7E6F5D926EB521A00C5E95E /* btn_mute.png */; };
+		D7E6F5DF26EB52A000C5E95E /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E6F5DD26EB52A000C5E95E /* iOSDevCenters+GIF.swift */; };
+		D7E6F5E026EB52A000C5E95E /* TipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E6F5DE26EB52A000C5E95E /* TipVC.swift */; };
+		D7E6F5E726EB52E000C5E95E /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5E126EB52DD00C5E95E /* GoogleAppMeasurement.framework */; };
+		D7E6F5E826EB52E000C5E95E /* UserMessagingPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5E226EB52DE00C5E95E /* UserMessagingPlatform.framework */; };
+		D7E6F5E926EB52E000C5E95E /* PromisesObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5E326EB52DE00C5E95E /* PromisesObjC.framework */; };
+		D7E6F5EA26EB52E000C5E95E /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5E426EB52DE00C5E95E /* GoogleUtilities.framework */; };
+		D7E6F5EB26EB52E000C5E95E /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5E526EB52DF00C5E95E /* GoogleMobileAds.framework */; };
+		D7E6F5EC26EB52E000C5E95E /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E6F5E626EB52DF00C5E95E /* nanopb.framework */; };
 		D7F82704265CB766007E7D12 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F82703265CB766007E7D12 /* MainMenuViewController.swift */; };
 		D7F82706265CBD40007E7D12 /* TileDash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F82705265CBD40007E7D12 /* TileDash.swift */; };
 		D7FC911C2667694E0049E1AA /* Teko-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7FC91172667694E0049E1AA /* Teko-Bold.ttf */; };
@@ -136,12 +141,6 @@
 		D767640926B7874C0001ECFB /* block_r_dino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_r_dino.png; sourceTree = "<group>"; };
 		D767640A26B7874D0001ECFB /* block_y_space.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_y_space.png; sourceTree = "<group>"; };
 		D767640B26B7874D0001ECFB /* block_b_dino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_b_dino.png; sourceTree = "<group>"; };
-		D76D261B26D629CD00B3E2DC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		D76D261C26D629CD00B3E2DC /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
-		D76D261D26D629CF00B3E2DC /* PromisesObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromisesObjC.framework; sourceTree = "<group>"; };
-		D76D261E26D629CF00B3E2DC /* UserMessagingPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UserMessagingPlatform.framework; sourceTree = "<group>"; };
-		D76D261F26D629CF00B3E2DC /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
-		D76D262026D629CF00B3E2DC /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
 		D76E2AE426B2D28000CAE0D2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D76E2AE626B2D7DD00CAE0D2 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		D77F108C2684E86600F9433A /* pink_rect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pink_rect.png; sourceTree = "<group>"; };
@@ -161,6 +160,17 @@
 		D7A98DBF2699362400A5FB11 /* icon_coming_soon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_coming_soon.png; sourceTree = "<group>"; };
 		D7A98DC02699362400A5FB11 /* icon_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_question.png; sourceTree = "<group>"; };
 		D7A98DC72699399700A5FB11 /* btn_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_home.png; sourceTree = "<group>"; };
+		D7E6F5D726EB521900C5E95E /* btn_restore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_restore.png; sourceTree = "<group>"; };
+		D7E6F5D826EB521900C5E95E /* TipMessage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TipMessage.gif; sourceTree = "<group>"; };
+		D7E6F5D926EB521A00C5E95E /* btn_mute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_mute.png; sourceTree = "<group>"; };
+		D7E6F5DD26EB52A000C5E95E /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
+		D7E6F5DE26EB52A000C5E95E /* TipVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipVC.swift; sourceTree = "<group>"; };
+		D7E6F5E126EB52DD00C5E95E /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		D7E6F5E226EB52DE00C5E95E /* UserMessagingPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UserMessagingPlatform.framework; sourceTree = "<group>"; };
+		D7E6F5E326EB52DE00C5E95E /* PromisesObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PromisesObjC.framework; sourceTree = "<group>"; };
+		D7E6F5E426EB52DE00C5E95E /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		D7E6F5E526EB52DF00C5E95E /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		D7E6F5E626EB52DF00C5E95E /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
 		D7F82703265CB766007E7D12 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		D7F82705265CBD40007E7D12 /* TileDash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileDash.swift; sourceTree = "<group>"; };
 		D7FC91172667694E0049E1AA /* Teko-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Bold.ttf"; sourceTree = "<group>"; };
@@ -178,13 +188,13 @@
 			files = (
 				D7B46B9326D62D9E0086FB90 /* StoreKit.framework in Frameworks */,
 				D795044F26D1BBA60051A032 /* AVFoundation.framework in Frameworks */,
-				D76D262326D629D000B3E2DC /* PromisesObjC.framework in Frameworks */,
-				D76D262126D629D000B3E2DC /* GoogleMobileAds.framework in Frameworks */,
-				D76D262626D629D000B3E2DC /* nanopb.framework in Frameworks */,
-				D76D262226D629D000B3E2DC /* GoogleUtilities.framework in Frameworks */,
-				D76D262426D629D000B3E2DC /* UserMessagingPlatform.framework in Frameworks */,
-				D76D262526D629D000B3E2DC /* GoogleAppMeasurement.framework in Frameworks */,
+				D7E6F5EB26EB52E000C5E95E /* GoogleMobileAds.framework in Frameworks */,
+				D7E6F5E926EB52E000C5E95E /* PromisesObjC.framework in Frameworks */,
+				D7E6F5EC26EB52E000C5E95E /* nanopb.framework in Frameworks */,
+				D7E6F5E826EB52E000C5E95E /* UserMessagingPlatform.framework in Frameworks */,
+				D7E6F5E726EB52E000C5E95E /* GoogleAppMeasurement.framework in Frameworks */,
 				D72C006A2643CE8900EDDA28 /* Messages.framework in Frameworks */,
+				D7E6F5EA26EB52E000C5E95E /* GoogleUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +204,9 @@
 		D7246F1F2657913300715C2A /* Res */ = {
 			isa = PBXGroup;
 			children = (
+				D7E6F5D926EB521A00C5E95E /* btn_mute.png */,
+				D7E6F5D726EB521900C5E95E /* btn_restore.png */,
+				D7E6F5D826EB521900C5E95E /* TipMessage.gif */,
 				D70DDE75269ACD0E00B99785 /* logo.png */,
 				D70DDE71269ACA4A00B99785 /* btn_purchase.png */,
 				D7A98DC72699399700A5FB11 /* btn_home.png */,
@@ -265,12 +278,12 @@
 		D72C00682643CE8900EDDA28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D76D261F26D629CF00B3E2DC /* GoogleAppMeasurement.framework */,
-				D76D261B26D629CD00B3E2DC /* GoogleMobileAds.framework */,
-				D76D261C26D629CD00B3E2DC /* GoogleUtilities.framework */,
-				D76D262026D629CF00B3E2DC /* nanopb.framework */,
-				D76D261D26D629CF00B3E2DC /* PromisesObjC.framework */,
-				D76D261E26D629CF00B3E2DC /* UserMessagingPlatform.framework */,
+				D7E6F5E126EB52DD00C5E95E /* GoogleAppMeasurement.framework */,
+				D7E6F5E526EB52DF00C5E95E /* GoogleMobileAds.framework */,
+				D7E6F5E426EB52DE00C5E95E /* GoogleUtilities.framework */,
+				D7E6F5E626EB52DF00C5E95E /* nanopb.framework */,
+				D7E6F5E326EB52DE00C5E95E /* PromisesObjC.framework */,
+				D7E6F5E226EB52DE00C5E95E /* UserMessagingPlatform.framework */,
 				D795044E26D1BBA60051A032 /* AVFoundation.framework */,
 				D76E2AE426B2D28000CAE0D2 /* StoreKit.framework */,
 				D72C00692643CE8900EDDA28 /* Messages.framework */,
@@ -295,6 +308,8 @@
 				D7173411267D193A00839D00 /* ResultViewController.swift */,
 				D77F108E2684EBAC00F9433A /* TutorialViewController.swift */,
 				D7A98DB92699355900A5FB11 /* StoreVC.swift */,
+				D7E6F5DD26EB52A000C5E95E /* iOSDevCenters+GIF.swift */,
+				D7E6F5DE26EB52A000C5E95E /* TipVC.swift */,
 				D76E2AE626B2D7DD00CAE0D2 /* IAPHelper.swift */,
 			);
 			path = "TileDash MessagesExtension";
@@ -421,7 +436,9 @@
 				D75B205F2666DCDB00117310 /* btn_play.png in Resources */,
 				D70DDE76269ACD0E00B99785 /* logo.png in Resources */,
 				D783BD4026856286000A3670 /* hand.png in Resources */,
+				D7E6F5DA26EB521A00C5E95E /* btn_restore.png in Resources */,
 				D7FC91202667694E0049E1AA /* Teko-Light.ttf in Resources */,
+				D7E6F5DB26EB521A00C5E95E /* TipMessage.gif in Resources */,
 				D767641626B7874D0001ECFB /* block_y_space.png in Resources */,
 				D795045626D1BF1F0051A032 /* lose.mp3 in Resources */,
 				D767640F26B7874D0001ECFB /* block_o_space.png in Resources */,
@@ -449,6 +466,7 @@
 				D7246F272657915D00715C2A /* block_r.png in Resources */,
 				D7FC911D2667694E0049E1AA /* Teko-Medium.ttf in Resources */,
 				D72C00702643CE8900EDDA28 /* MainInterface.storyboard in Resources */,
+				D7E6F5DC26EB521A00C5E95E /* btn_mute.png in Resources */,
 				D767641426B7874D0001ECFB /* block_y_dino.png in Resources */,
 				D7246F2A2657915D00715C2A /* block_g.png in Resources */,
 			);
@@ -465,7 +483,9 @@
 				D7F82706265CBD40007E7D12 /* TileDash.swift in Sources */,
 				D7A98DBA2699355900A5FB11 /* StoreVC.swift in Sources */,
 				D77F108F2684EBAC00F9433A /* TutorialViewController.swift in Sources */,
+				D7E6F5E026EB52A000C5E95E /* TipVC.swift in Sources */,
 				D76E2AE726B2D7DD00CAE0D2 /* IAPHelper.swift in Sources */,
+				D7E6F5DF26EB52A000C5E95E /* iOSDevCenters+GIF.swift in Sources */,
 				D7FEC6422658F5D4007A0182 /* GameViewController.swift in Sources */,
 				D7F82704265CB766007E7D12 /* MainMenuViewController.swift in Sources */,
 				D72C006D2643CE8900EDDA28 /* MessagesViewController.swift in Sources */,
