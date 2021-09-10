@@ -35,4 +35,9 @@ class MainMenuViewController: UIViewController {
         present(controller, animated: true, completion: nil)
         MessagesViewController.messagesVC.requestPresentationStyle(.expanded)
     }
+    @IBAction func onClickedMute(_ sender: Any) {
+        let controller = storyboard!.instantiateViewController(identifier: "TipVC") as! TipVC
+        present(controller, animated: true, completion: nil)
+        MessagesViewController.messagesVC.requestPresentationStyle(.expanded)
+    }
 }

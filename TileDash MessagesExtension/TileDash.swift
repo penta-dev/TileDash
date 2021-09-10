@@ -380,11 +380,13 @@ class TileDash {
         }
         return 0
     }
+    
+    static var _audioPlayer: AVAudioPlayer!
     static func playSound(name:String) {
         let url = Bundle.main.url(forResource: name, withExtension: "mp3")
         do {
-            let audioPlayer = try AVAudioPlayer(contentsOf: url!)
-            audioPlayer.play()
+            _audioPlayer = try AVAudioPlayer(contentsOf: url!)
+            _audioPlayer.play()
         } catch {
             print("couldn't load sound file")
         }

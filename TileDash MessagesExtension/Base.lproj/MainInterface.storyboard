@@ -63,20 +63,33 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9w-Jz-BnI">
-                                <rect key="frame" x="251" y="0.0" width="69" height="69"/>
+                                <rect key="frame" x="250" y="0.0" width="70" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="69" id="0gc-1v-4oD"/>
-                                    <constraint firstAttribute="width" constant="69" id="Hjs-Yo-dRQ"/>
+                                    <constraint firstAttribute="height" constant="70" id="0gc-1v-4oD"/>
+                                    <constraint firstAttribute="width" constant="70" id="Hjs-Yo-dRQ"/>
                                 </constraints>
                                 <state key="normal" image="btn_purchase.png"/>
                                 <connections>
                                     <action selector="onClickedPurchase:" destination="IMd-Ex-fWf" eventType="touchUpInside" id="sZ2-Gd-B73"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AD3-D0-kVS">
+                                <rect key="frame" x="180" y="0.0" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="KrM-Hu-GGJ"/>
+                                    <constraint firstAttribute="width" constant="70" id="dZs-My-4BL"/>
+                                </constraints>
+                                <state key="normal" image="btn_mute.png"/>
+                                <connections>
+                                    <action selector="onClickedMute:" destination="IMd-Ex-fWf" eventType="touchUpInside" id="T0u-UQ-xgS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iSX-DU-62w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="f9w-Jz-BnI" firstAttribute="leading" secondItem="AD3-D0-kVS" secondAttribute="trailing" id="1Qx-d3-9jc"/>
+                            <constraint firstItem="AD3-D0-kVS" firstAttribute="top" secondItem="SnB-QF-kxq" secondAttribute="top" id="KQB-bO-SjP"/>
                             <constraint firstItem="f9w-Jz-BnI" firstAttribute="top" secondItem="SnB-QF-kxq" secondAttribute="top" id="YS6-0P-O6M"/>
                             <constraint firstItem="iSX-DU-62w" firstAttribute="trailing" secondItem="f9w-Jz-BnI" secondAttribute="trailing" id="bRQ-FM-Wd4"/>
                             <constraint firstItem="C09-ia-qUx" firstAttribute="centerY" secondItem="SnB-QF-kxq" secondAttribute="centerY" constant="-40" id="cYO-MF-LCL"/>
@@ -700,43 +713,43 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D I N O S A U R S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GG3-Br-gVc">
-                                <rect key="frame" x="51.5" y="274" width="67.5" height="21.5"/>
-                                <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="15"/>
+                                <rect key="frame" x="43" y="271" width="84" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Teko-Medium" family="Teko" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N O   A D S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXh-YR-QaG">
-                                <rect key="frame" x="64" y="116" width="42.5" height="21.5"/>
-                                <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="15"/>
+                                <rect key="frame" x="58.5" y="113" width="53" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Teko-Medium" family="Teko" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9A-bC-Gjm">
-                                <rect key="frame" x="71.5" y="237.5" width="27.5" height="21.5"/>
-                                <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="15"/>
+                                <rect key="frame" x="68" y="237.5" width="34" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Teko-Medium" family="Teko" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RzV-IO-M2r">
-                                <rect key="frame" x="71.5" y="395.5" width="27.5" height="21.5"/>
-                                <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="15"/>
+                                <rect key="frame" x="68" y="395.5" width="34" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Teko-Medium" family="Teko" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXN-XR-ToN">
-                                <rect key="frame" x="223" y="237.5" width="24.5" height="21.5"/>
-                                <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="15"/>
+                                <rect key="frame" x="220" y="237.5" width="30.5" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Teko-Medium" family="Teko" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D E F A U L T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xr-OF-74m">
-                                <rect key="frame" x="210" y="116" width="50.5" height="21.5"/>
-                                <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="15"/>
+                                <rect key="frame" x="203.5" y="113" width="63" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Teko-Medium" family="Teko" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASd-B7-bO2">
-                                <rect key="frame" x="221.5" y="395.5" width="27.5" height="21.5"/>
-                                <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="15"/>
+                                <rect key="frame" x="218" y="395.5" width="34" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Teko-Medium" family="Teko" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S P A C E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xZ-ez-PG5">
-                                <rect key="frame" x="217" y="274" width="36.5" height="21.5"/>
-                                <fontDescription key="fontDescription" name="Teko-Regular" family="Teko" pointSize="15"/>
+                                <rect key="frame" x="212.5" y="271" width="45.5" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Teko-Medium" family="Teko" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_question.png" translatesAutoresizingMaskIntoConstraints="NO" id="HHA-2x-Owf">
@@ -766,7 +779,7 @@
                                     <constraint firstAttribute="width" constant="95" id="ehw-pt-9Qk"/>
                                     <constraint firstAttribute="height" constant="95" id="iRS-qy-4j8"/>
                                 </constraints>
-                                <state key="normal" image="btn_purchase.png"/>
+                                <state key="normal" image="btn_restore.png"/>
                                 <connections>
                                     <action selector="onClickedRestore:" destination="vNI-eX-NbU" eventType="touchUpInside" id="SCa-xs-0In"/>
                                 </connections>
@@ -828,6 +841,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bu-8W-bVM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="727.536231884058" y="772.76785714285711"/>
+        </scene>
+        <!--TipVC-->
+        <scene sceneID="UD8-Sb-9oj">
+            <objects>
+                <viewController storyboardIdentifier="TipVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="X0u-3Q-zLw" customClass="TipVC" customModule="TileDash_MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6X2-a4-bdL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMk-ib-gHL" userLabel="Home">
+                                <rect key="frame" x="112.5" y="433" width="95" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="RXS-se-YRS"/>
+                                    <constraint firstAttribute="width" constant="95" id="g4b-O7-SHq"/>
+                                </constraints>
+                                <state key="normal" image="btn_home.png"/>
+                                <connections>
+                                    <action selector="onClickedHome:" destination="X0u-3Q-zLw" eventType="touchUpInside" id="JlD-hZ-WHW"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ej4-6S-DrA">
+                                <rect key="frame" x="40" y="24.5" width="240" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="5po-ZJ-mnD"/>
+                                    <constraint firstAttribute="height" constant="400" id="vkq-Pw-lnn"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dlb-c4-EZq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wMk-ib-gHL" firstAttribute="centerX" secondItem="6X2-a4-bdL" secondAttribute="centerX" id="BQc-Rd-0X8"/>
+                            <constraint firstItem="ej4-6S-DrA" firstAttribute="centerY" secondItem="6X2-a4-bdL" secondAttribute="centerY" multiplier="0.85" id="Gml-9c-8i0"/>
+                            <constraint firstItem="ej4-6S-DrA" firstAttribute="centerX" secondItem="6X2-a4-bdL" secondAttribute="centerX" id="REb-GL-DxO"/>
+                            <constraint firstItem="dlb-c4-EZq" firstAttribute="bottom" secondItem="wMk-ib-gHL" secondAttribute="bottom" id="X6W-hK-qtL"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="imageView" destination="ej4-6S-DrA" id="pnB-AU-dbk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xUp-og-FKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228.985507246377" y="772.76785714285711"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="0sX-GQ-EEC">
@@ -912,10 +970,12 @@
         <image name="block_w.png" width="256" height="256"/>
         <image name="block_y.png" width="256" height="256"/>
         <image name="btn_home.png" width="256" height="256"/>
+        <image name="btn_mute.png" width="256" height="256"/>
         <image name="btn_play.png" width="798" height="197"/>
         <image name="btn_purchase.png" width="256" height="256"/>
         <image name="btn_quit.png" width="285" height="102"/>
         <image name="btn_rematch.png" width="285" height="102"/>
+        <image name="btn_restore.png" width="256" height="256"/>
         <image name="hand.png" width="200" height="200"/>
         <image name="icon_coming_soon.png" width="444" height="444"/>
         <image name="icon_lock.png" width="176" height="234"/>
@@ -923,7 +983,7 @@
         <image name="icon_remove_ads.png" width="444" height="444"/>
         <image name="icon_theme1.png" width="444" height="444"/>
         <image name="icon_theme2.png" width="444" height="444"/>
-        <image name="logo.png" width="1016" height="112"/>
+        <image name="logo.png" width="1037" height="133"/>
         <image name="pink_rect.png" width="1000" height="1000"/>
         <image name="winner_icon.png" width="287" height="287"/>
         <systemColor name="systemBackgroundColor">

@@ -22,7 +22,6 @@ class TutorialViewController: UIViewController {
         UIView.animate(withDuration: 1, delay: 0.5, options: [.repeat, .autoreverse], animations: {
                 self.hand.center.x = x
         }, completion: nil)
-
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.removeFromParent()
